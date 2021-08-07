@@ -30,7 +30,15 @@ export const ContactForm = () => {
             name="lastname"
             placeholder="Your last name.."
           />
-          <input type="submit" value="Submit" />
+          {/* <input type="submit" value="Submit" /> */}
+          <button
+            className="submitButton"
+            onClick={() => {
+              console.log("clicled");
+            }}
+          >
+            Submit
+          </button>
         </form>
 
         <hr class="divider_dashed" />

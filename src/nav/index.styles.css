@@ -8,21 +8,35 @@
    transition: all .5s ease;
  }
 
- .sidebar .header_bar {
-   display: -webkit-box;
-   display: -ms-flexbox;
+ .header_bar {
    display: flex;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
    align-items: center;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
    justify-content: center;
-   height: 117px;
+   height: 100px;
    width: 100%;
    background: white;
    -webkit-box-shadow: -8px 14px 21px rgba(0, 0, 0, 0.25);
    box-shadow: -8px 14px 21px rgba(0, 0, 0, 0.25);
+ }
+
+ .header_bar header {
+   font-family: "Manrope", sans-serif;
+   font-weight: 800;
+   font-size: 25px;
+   color: black;
+   text-align: center;
+   user-select: none;
+   letter-spacing: -0.065em;
+   padding-left: 10px;
+ }
+
+ .regis_bar {
+   padding: 20px;
+ }
+
+ .regis_text {
+   color: #F6F6F6;
+   padding-left: 10px;
  }
 
  /* The navigation menu links */
@@ -31,7 +45,7 @@
    padding: 8px 8px 8px 32px;
    text-decoration: none;
    font-size: 25px;
-   color: #818181;
+   color: #ffffff;
    display: block;
    transition: 0.3s;
  }
@@ -40,6 +54,11 @@
 
  .sidenav a:hover {
    color: #f1f1f1;
+   background-color: #7496CC;
+ }
+
+ .sidenav span {
+   font-family: 'Roboto Condensed' !important;
  }
 
  /* Position and style the close button (top right corner) */
