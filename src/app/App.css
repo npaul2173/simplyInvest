@@ -1,0 +1,49 @@
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+.containerMain {
+  margin-left: 250;
+  display: flex;
+  flex: 1;
+}
+
+.box1 {
+  flex: 5;
+}
+
+.box3 {
+  flex: 1;
+}
+
+.main {
+  transition: margin-left .5s;
+  padding: 20px;
+  flex: auto;
+  margin-left: 300px;
+  margin-left: 300;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.shadow1 {
+  margin: 40px;
+  box-shadow: rgba(226, 226, 226, 0.2) 0px 8px 24px;
+  zoom: 1;
+}
+
+.shadow1 .content {
+  position: relative;
+  padding: 100px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
