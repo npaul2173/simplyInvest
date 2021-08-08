@@ -1,7 +1,7 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
 .containerMain {
-  margin-left: 250;
+  /* margin-left: 250px; */
   display: flex;
   flex: 1;
 }
