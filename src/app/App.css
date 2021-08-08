@@ -6,23 +6,29 @@
   flex: 1;
 }
 
+.contentWrapper {
+  display: flex;
+  flex: 1;
+}
+
 .box1 {
+  /* background-color: rgb(200, 200, 200); */
   flex: 5;
 }
 
-.box3 {
+.contactWrapper {
+  /* background-color: rgb(151, 149, 140); */
   flex: 1.5;
 }
 
+/* 
 .main {
   transition: margin-left .5s;
-  /* padding: 20px; */
-  /* flex: auto; */
   margin-left: 300px;
   margin-left: 300;
   flex-direction: column;
-  background-color: #F6F6F6;
-}
+  background-color: #b39797;
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
@@ -46,4 +52,9 @@
   padding: 100px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
+}
+
+.mainWrapper {
+  display: flex;
+  position: relative;
 }

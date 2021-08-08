@@ -1,11 +1,6 @@
 .contact_form {
-  /* width: 350px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  padding-right: 50px;
-  position: fixed;
+  width: fit-content;
+  right: 20px;
   top: 0px;
 }
 

@@ -1,88 +1,91 @@
- .sidenav {
-   overflow-x: hidden;
-   position: fixed;
-   width: 300px;
-   height: 100vh;
-   background: #3B5C90;
-   transition: all .5s ease;
-   overflow: hidden;
- }
+.header_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: -8px 14px 21px rgba(0, 0, 0, 0.25);
+  box-shadow: -8px 14px 21px rgba(0, 0, 0, 0.25);
+}
 
- .header_bar {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100px;
-   width: 100%;
-   background: white;
-   -webkit-box-shadow: -8px 14px 21px rgba(0, 0, 0, 0.25);
-   box-shadow: -8px 14px 21px rgba(0, 0, 0, 0.25);
- }
+.header_bar header {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  user-select: none;
+  letter-spacing: -0.065em;
+  padding-left: 10px;
+}
 
- .header_bar header {
-   font-family: "Manrope", sans-serif;
-   font-weight: 800;
-   font-size: 25px;
-   color: black;
-   text-align: center;
-   user-select: none;
-   letter-spacing: -0.065em;
-   padding-left: 10px;
- }
+.regis_bar {
+  padding: 20px;
+}
 
- .regis_bar {
-   padding: 20px;
- }
+.regis_text {
+  color: #F6F6F6;
+  padding-left: 10px;
+}
 
- .regis_text {
-   color: #F6F6F6;
-   padding-left: 10px;
- }
+/* The navigation menu links */
 
- /* The navigation menu links */
+.sidenav {
+  overflow-x: hidden;
+  /* position: fixed; */
+  width: 300px;
+  height: 100vh;
+  background: #3B5C90;
+  /* transition: all .5s ease; */
+  overflow: hidden;
+  box-shadow: -5px 1px 38px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: -5px 1px 38px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: -5px 1px 38px 0px rgba(0, 0, 0, 0.16);
+}
 
- .sidenav a {
-   padding: 8px 8px 8px 50px;
-   margin-bottom: 10px;
-   text-decoration: none;
-   font-size: 25px;
-   color: #ffffff;
-   display: block;
-   transition: 0.1s;
- }
+.sidenav a {
+  padding: 8px 8px 8px 50px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.1s;
+}
 
- /* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color */
 
- .sidenav a:hover {
-   color: #f1f1f1;
-   background-color: #7496CC;
- }
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #7496CC;
+}
 
- .sidenav .navSpan {
-   font-family: 'Roboto Condensed' !important;
-   text-transform: uppercase;
-   font-weight: 700;
-   font-size: 20px;
- }
+.sidenav .navSpan {
+  font-family: 'Roboto Condensed' !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
 
- /* Position and style the close button (top right corner) */
+/* Position and style the close button (top right corner) */
 
- .sidenav .closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 36px;
-   margin-left: 50px;
- }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
- /* Styles are written but not getting applied at the moment */
+/* Styles are written but not getting applied at the moment */
 
- .navBackground {
-   width: 100;
-   height: 100;
- }
+.navBackground {
+  width: 100;
+  height: 100;
+}
 
- .navBackgroundContainer {
-   width: 100;
-   height: 100;
- }
+.navBackgroundContainer {
+  width: 100;
+  height: 100;
+}

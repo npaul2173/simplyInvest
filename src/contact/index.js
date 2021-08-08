@@ -40,8 +40,6 @@ export const ContactForm = () => {
             Submit
           </button>
         </form>
-
-        <hr class="divider_dashed" />
       </div>
     </div>
   );

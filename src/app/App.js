@@ -1,41 +1,37 @@
 import "./App.css";
 import React from "react";
-import { ContactForm } from "../contact/";
+// import { ContactForm } from "../contact/";
 import { NavBar } from "../nav";
+// import { LowerNav } from "../lowerNav";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Routes } from "../nav/routes";
+import { ContactForm } from "../contact";
 import { LowerNav } from "../lowerNav";
-import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="mainWrapper">
         <NavBar />
-        <div className="main">
-          <div className="containerMain">
-            <div className="box1">
-              {/* <div className="shadow1">
-                <div className="content">Box-shadowed element</div>
-              </div>
-              <div className="shadow1">
-                <div className="content">Box-shadowed element</div>
-              </div>
-              <div className="shadow1">
-                <div className="content">Box-shadowed element</div>
-              </div>
-              <div className="shadow1">
-                <div className="content">Box-shadowed element</div>
-              </div> */}
-            </div>
+        <div className="contentWrapper">
+          <div className="box1">
+            <Switch>
+              {Routes.map((route) => (
+                <Route exact path={route.path} key={route.path}>
+                  <route.component />
+                </Route>
+              ))}
+            </Switch>
 
-            <div className="box3">
-              <ContactForm />
-            </div>
+            <LowerNav />
+          </div>
+
+          <div className="contactWrapper">
+            <ContactForm />
           </div>
         </div>
-
-        <LowerNav />
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 };
 

@@ -1,0 +1,31 @@
+.homeContainer {
+  padding: 0px 20px 0px 70px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.headers {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.065em;
+}
+
+.rightContainer {
+  flex: 0.5;
+  margin-right: 30px;
+  /* background-color: aqua; */
+}
+
+.leftContainer {
+  flex: 0.5;
+  /* background-color: rgb(99, 117, 117); */
+}
+
+.infowrapper {
+  padding-top: 20px;
+}
+
+.gapwrapper {
+  margin-top: 50px;
+}

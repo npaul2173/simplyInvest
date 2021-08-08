@@ -1,7 +1,7 @@
  .lowernav {
    background-color: rgb(255, 255, 255);
    /* overflow: hidden; */
-   position: fixed;
+   position: absolute;
    bottom: 0;
    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.14);
    margin-left: 300px;
@@ -9,7 +9,7 @@
    padding: 20px;
    flex-direction: row;
    justify-content: space-between;
-   transition: all .5s ease;
+   /* transition: all .5s ease; */
  }
 
  .lowernav a {
@@ -31,5 +31,5 @@
  }
 
  .infoConatiner {
-   /* background-color: aqua; */
+   background-color: aqua;
  }
