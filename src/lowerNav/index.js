@@ -5,13 +5,13 @@ export const LowerNav = () => {
   return (
     <div className="lowernav">
       <div className="loweNavcontainer">
-        <a href="#" class="active">
+        <a href="/sip" class="active">
           SIP
         </a>
-        <a href="#">Associates</a>
-        <a href="#">Disclaimer </a>
-        <a href="#">Join us</a>
-        <a href="#">Contact us</a>
+        <a href="/associates">Associates</a>
+        <a href="/disclaimer">Disclaimer </a>
+        <a href="/joinUs">Join us</a>
+        <a href="/contactUs">Contact us</a>
       </div>
       <div className="infoConatiner"></div>
     </div>
