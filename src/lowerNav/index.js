@@ -6,24 +6,14 @@ export const LowerNav = () => {
     <div className="lowernav">
       <div className="loweNavcontainer">
         <a href="#" class="active">
-          <span className="lowerNavSpan">SIP</span>
+          SIP
         </a>
-        <a href="#">
-          <span className="lowerNavSpan">Associates</span>
-        </a>
-        <a href="#">
-          <span className="lowerNavSpan">Disclaimer</span>
-        </a>
-        <a href="#">
-          <span className="lowerNavSpan">Join us</span>
-        </a>
-        <a href="#">
-          <span className="lowerNavSpan">Contact us</span>
-        </a>
+        <a href="#">Associates</a>
+        <a href="#">Disclaimer </a>
+        <a href="#">Join us</a>
+        <a href="#">Contact us</a>
       </div>
-      <div className="infoConatiner">
-        {/* <h1>Header footer section</h1> */}
-      </div>
+      <div className="infoConatiner"></div>
     </div>
   );
 };

@@ -29,6 +29,7 @@ const App = () => {
           </div>
         </div>
       </div>
+
       <LowerNav />
     </div>
   );
