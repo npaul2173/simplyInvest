@@ -11,13 +11,13 @@
 }
 
 .box3 {
-  flex: 1;
+  flex: 1.5;
 }
 
 .main {
   transition: margin-left .5s;
-  padding: 20px;
-  flex: auto;
+  /* padding: 20px; */
+  /* flex: auto; */
   margin-left: 300px;
   margin-left: 300;
   flex-direction: column;

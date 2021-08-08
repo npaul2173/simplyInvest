@@ -1,0 +1,46 @@
+.lowerNavSpan {
+  color: blue;
+}
+
+.lowernav {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #F9F9F9;
+  box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.14);
+  margin-left: 300px;
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+  transition: all .5s ease;
+}
+
+.lowernav a {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.lowernav span {
+  font-family: 'Roboto Condensed' !important;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+}
+
+.lowernav span:hover {
+  color: rgb(255, 255, 255);
+}
+
+.lowernav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.lowernav a:hover {
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(234, 100, 33, 1) 0%, rgba(234, 151, 33, 1) 100%);
+}
+
+.infoConatiner {
+  background-color: aqua;
+}

@@ -1,6 +1,8 @@
 import "./App.css";
+import React from "react";
 import { ContactForm } from "../contact/";
 import { NavBar } from "../nav";
+import { LowerNav } from "../lowerNav";
 const App = () => {
   return (
     <div>
@@ -11,6 +13,15 @@ const App = () => {
             <div className="shadow1">
               <div className="content">Box-shadowed element</div>
             </div>
+            <div className="shadow1">
+              <div className="content">Box-shadowed element</div>
+            </div>
+            <div className="shadow1">
+              <div className="content">Box-shadowed element</div>
+            </div>
+            <div className="shadow1">
+              <div className="content">Box-shadowed element</div>
+            </div>
           </div>
 
           <div className="box3">
@@ -18,6 +29,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <LowerNav />
     </div>
   );
 };
