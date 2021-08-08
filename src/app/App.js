@@ -13,7 +13,7 @@ const App = () => {
         <div className="main">
           <div className="containerMain">
             <div className="box1">
-              <div className="shadow1">
+              {/* <div className="shadow1">
                 <div className="content">Box-shadowed element</div>
               </div>
               <div className="shadow1">
@@ -24,7 +24,7 @@ const App = () => {
               </div>
               <div className="shadow1">
                 <div className="content">Box-shadowed element</div>
-              </div>
+              </div> */}
             </div>
 
             <div className="box3">
