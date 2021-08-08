@@ -1,5 +1,6 @@
 import "./index.styles.css";
 import Logo from "../assets/svgs/LOGO.svg";
+import NavBackground from "../assets/svgs/NavLowerbackgroung.svg";
 export const NavBar = () => {
   return (
     <div class="sidenav">
@@ -14,24 +15,28 @@ export const NavBar = () => {
         </span>
       </div>
 
-      <a style={{ fontFamily: "Roboto Condensed" }} href="#" class="active">
-        <span>Home</span>
+      <a href="#" class="active">
+        <span className="navSpan">Home</span>
       </a>
       <a href="#">
-        <span>About us</span>
+        <span className="navSpan">About us</span>
       </a>
       <a href="#">
-        <span>Our Services</span>
+        <span className="navSpan">Our Services</span>
       </a>
       <a href="#">
-        <span>Parivartan</span>
+        <span className="navSpan">Parivartan</span>
       </a>
       <a href="#">
-        <span>Learning centre</span>
+        <span className="navSpan">Learning centre</span>
       </a>
       <a href="#">
-        <span>Invest online</span>
+        <span className="navSpan">Invest online</span>
       </a>
+
+      <div className="navBackgroundContainer">
+        <img className="navBackground" src={NavBackground} alt="simplyInvest" />
+      </div>
     </div>
   );
 };
