@@ -7,13 +7,19 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fab:active {
+  transform: scale(.9);
 }
 
 .floatingButtonWrapper {
   z-index: 100;
   position: fixed;
   z-index: 200;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
 }
 

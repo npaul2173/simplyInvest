@@ -6,7 +6,6 @@ import "./index.styles.css";
 export const FloatingButtons = () => {
   return (
     <div className="floatingButtonWrapper">
-      <header>floating button</header>
       <FacebookFloatingButton />
       <InstagramFloatingButton />
       <YoutubeFloatingButton />

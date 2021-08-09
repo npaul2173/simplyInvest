@@ -1,8 +1,9 @@
  .lowernav {
    background-color: rgb(255, 255, 255);
    /* overflow: hidden; */
-   position: absolute;
+   position: fixed;
    bottom: 0;
+   width: 100%;
    box-shadow: 0px 0px 86px rgba(0, 0, 0, 0.14);
    margin-left: 300px;
    display: flex;
@@ -12,12 +13,17 @@
    /* transition: all .5s ease; */
  }
 
+ .loweNavcontainer {
+   margin-left: 50px;
+ }
+
  .lowernav a {
    padding: 20px;
    background-color: rgb(255, 255, 255);
    font-family: 'Roboto Condensed' !important;
    font-weight: 400;
    color: black;
+   margin-right: 30px;
    font-size: 20px;
  }
 
@@ -30,6 +36,22 @@
    background: linear-gradient(0deg, rgba(234, 100, 33, 1) 0%, rgba(234, 151, 33, 1) 100%);
  }
 
+ .lowernav .navSpan {
+   font-family: 'Roboto Condensed' !important;
+ }
+
  .infoConatiner {
-   background-color: aqua;
+   /* background-color: aqua; */
+   display: flex;
+   flex-direction: row;
+   margin-right: 400px
+ }
+
+ .infoConatiner h4 {
+   background-color: rgb(255, 255, 255);
+   font-family: 'Roboto Condensed' !important;
+   font-weight: 700;
+   color: #A4A4A4;
+   font-size: 20px;
+   margin-left: 40px;
  }

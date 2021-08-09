@@ -4,7 +4,7 @@ import React from "react";
 import { NavBar } from "../nav";
 // import { LowerNav } from "../lowerNav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Routes } from "../nav/routes";
+import { LowerRoutes, Routes } from "../nav/routes";
 import { ContactForm } from "../contact";
 import { LowerNav } from "../lowerNav";
 import { FloatingButtons } from "../floatingButtons";
@@ -22,9 +22,12 @@ const App = () => {
                   <route.component />
                 </Route>
               ))}
+              {LowerRoutes.map((route) => (
+                <Route exact path={route.path} key={route.path}>
+                  <route.component />
+                </Route>
+              ))}
             </Switch>
-
-            {/* <LowerNav /> */}
           </div>
 
           <div className="contactWrapper">
@@ -32,6 +35,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <LowerNav />
       <FloatingButtons />
     </BrowserRouter>
   );
