@@ -33,7 +33,7 @@
 
 .sidenav {
   overflow-x: hidden;
-  /* position: fixed; */
+  position: fixed;
   width: 300px;
   height: 100vh;
   background: #3B5C90;

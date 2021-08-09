@@ -24,16 +24,15 @@ const App = () => {
               ))}
             </Switch>
 
-            <LowerNav />
+            {/* <LowerNav /> */}
           </div>
 
           <div className="contactWrapper">
             <ContactForm />
           </div>
-
-          <FloatingButtons />
         </div>
       </div>
+      <FloatingButtons />
     </BrowserRouter>
   );
 };

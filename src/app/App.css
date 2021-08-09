@@ -9,6 +9,8 @@
 .contentWrapper {
   display: flex;
   flex: 1;
+  overflow-y: scroll;
+  margin-left: 300px;
 }
 
 .box1 {
