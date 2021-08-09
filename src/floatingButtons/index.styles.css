@@ -1,0 +1,39 @@
+.fab {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.floatingButtonWrapper {
+  z-index: 100;
+  position: absolute;
+  z-index: 200;
+  bottom: 20px;
+  right: 20px;
+}
+
+.instagramButton {
+  box-shadow: 0px 5px 20px #594e6b;
+  background: linear-gradient(163.7deg, #313CD0 1.89%, #B023AE 38.47%, #E8395B 71.62%, #F5A336 107.99%);
+}
+
+.youtubeButton {
+  box-shadow: 0px 5px 20px #F10D0D;
+  background: #F10D0D;
+}
+
+.facebookButton {
+  box-shadow: 0px 5px 20px #4267B2;
+  background: #4267B2;
+}
+
+.fabIcons {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+}

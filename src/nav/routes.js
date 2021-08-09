@@ -1,8 +1,6 @@
+import { AboutUs } from "../aboutUs";
 import { Home } from "../home";
 
-const AboutUs = () => {
-  return <h1>About us</h1>;
-};
 const OurServices = () => {
   return <h1>Our Services</h1>;
 };

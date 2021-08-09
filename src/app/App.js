@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Routes } from "../nav/routes";
 import { ContactForm } from "../contact";
 import { LowerNav } from "../lowerNav";
+import { FloatingButtons } from "../floatingButtons";
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
           <div className="contactWrapper">
             <ContactForm />
           </div>
+
+          <FloatingButtons />
         </div>
       </div>
     </BrowserRouter>
