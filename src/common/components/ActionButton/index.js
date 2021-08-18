@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { AiFillCaretRight } from "react-icons/ai";
 import "./index.styles.css";
 
-export const ActionButton_1 = () => {
+export const KYCButton = () => {
   return (
     <div className={clsx("actionButtonWrapper", "buttonKYCStyle")}>
       <div className="titleWrapper">Track your KYC status</div>
@@ -13,7 +13,7 @@ export const ActionButton_1 = () => {
   );
 };
 
-export const ActionButton_2 = () => {
+export const FATCAButton = () => {
   return (
     <div className={clsx("actionButtonWrapper", "buttonFatcaStyle")}>
       <div className="titleWrapper">Submit your FATCA/CRS</div>
@@ -24,7 +24,7 @@ export const ActionButton_2 = () => {
   );
 };
 
-export const ActionButton_3 = () => {
+export const SupplementaryButton = () => {
   return (
     <div className={clsx("actionButtonWrapper", "buttonSupplymentaryStyle")}>
       <div className="titleWrapper">Supplementary KYC</div>
