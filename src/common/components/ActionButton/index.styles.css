@@ -1,0 +1,57 @@
+.actionButtonWrapper {
+  height: 63px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 10px;
+  transition: all .2s ease;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.actionButtonArrowRight {
+  color: white;
+}
+
+.titleWrapper {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.actionButtonWrapper:hover {
+  transform: scale(1.05);
+}
+
+.buttonKYCStyle {
+  box-shadow: #1e9b452f 0px 8px 24px;
+  background: #238643;
+}
+
+.buttonKYCStyle:hover {
+  background: #239246;
+  box-shadow: #1e9b46a9 0px 8px 24px;
+}
+
+.buttonFatcaStyle {
+  box-shadow: #fd8c0248 0px 8px 24px;
+  background: #FD8A02;
+}
+
+.buttonFatcaStyle:hover {
+  box-shadow: #fd8c029f 0px 8px 24px;
+  background: #ff9b22;
+}
+
+.buttonSupplymentaryStyle {
+  box-shadow: #d41e4c5b 0px 8px 24px;
+  background: #D41E4A;
+}
+
+.buttonSupplymentaryStyle:hover {
+  box-shadow: #d41e4c63 0px 8px 24px;
+  background: #D41E4A;
+}

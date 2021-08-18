@@ -8,6 +8,7 @@ import { LowerRoutes, Routes } from "../nav/routes";
 import { ContactForm } from "../contact";
 import { LowerNav } from "../lowerNav";
 import { FloatingButtons } from "../floatingButtons";
+import { ActionBarSection } from "../ActionBarSection";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
 
           <div className="contactWrapper">
             <ContactForm />
+            <ActionBarSection />
           </div>
         </div>
       </div>
