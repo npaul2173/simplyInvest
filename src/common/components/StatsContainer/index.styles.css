@@ -3,9 +3,11 @@
   border-color: #CECECE;
   border-width: 2px;
   border-style: dashed;
+  width: 200px;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .statContainer {
