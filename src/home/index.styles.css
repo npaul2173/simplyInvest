@@ -40,5 +40,16 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .homeFirstContainer {
+    /* background-color: rgb(207, 90, 22); */
+    flex-direction: column;
+  }
+  .leftContainer {
+    margin-top: 50px;
+  }
 }

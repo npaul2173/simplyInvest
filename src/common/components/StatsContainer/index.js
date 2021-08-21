@@ -1,11 +1,11 @@
 import "./index.styles.css";
 
 // Stats Container
-export const StatsContainer = () => {
+export const StatsContainer = ({ statNumber = "0", statTitle = "title" }) => {
   return (
     <div className="statsWrapper">
-      <div className="statContainer">2300+</div>
-      <div className="statTitle">Participants</div>
+      <div className="statContainer">{statNumber}</div>
+      <div className="statTitle">{statTitle}</div>
     </div>
   );
 };

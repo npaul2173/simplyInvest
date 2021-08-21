@@ -1,7 +1,6 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
 .containerMain {
-  /* margin-left: 250px; */
   display: flex;
   flex: 1;
 }
@@ -19,28 +18,32 @@
 }
 
 .contactWrapper {
-  /* background-color: rgb(151, 149, 140); */
   flex: 1.5;
 }
 
-/* 
-.main {
-  transition: margin-left .5s;
-  margin-left: 300px;
-  margin-left: 300;
-  flex-direction: column;
-  background-color: #b39797;
-} */
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+@media screen and (max-width: 1450px) {
+  .contentWrapper {
+    flex-direction: column;
   }
-  .sidenav a {
-    font-size: 18px;
+  .contactWrapper {
+    padding-left: 30px;
+    display: flex;
   }
+}
+
+@media screen and (max-width: 900px) {
+  .contentWrapper {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
+
+.contactAppWrapper {
+  flex: 0.5;
+}
+
+.actionAppWrapper {
+  flex: 0.5;
 }
 
 .shadow1 {

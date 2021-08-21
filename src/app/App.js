@@ -32,8 +32,12 @@ const App = () => {
           </div>
 
           <div className="contactWrapper">
-            <ContactForm />
-            <ActionBarSection />
+            <div className="contactAppWrapper">
+              <ContactForm />
+            </div>
+            <div className="actionAppWrapper">
+              <ActionBarSection />
+            </div>
           </div>
         </div>
       </div>

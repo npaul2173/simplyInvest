@@ -46,4 +46,11 @@ input[type="text"], select, textarea {
   max-width: 300px;
 }
 
+@media screen and (max-width: 1450px) {
+  .container {
+    /* background-color: rgb(164, 207, 22); */
+    max-width: 2000px;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */
