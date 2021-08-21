@@ -1,16 +1,16 @@
 import {
-  FATCAButton,
-  KYCButton,
-  SupplementaryButton,
+  ActionButtonFatca,
+  ActionButtonKYC,
+  ActionButtonSupplementary,
 } from "../common/components/ActionButton";
 import "./index.styles.css";
 
 export const ActionBarSection = () => {
   return (
     <div className="actionBarWrapper">
-      <KYCButton />
-      <FATCAButton />
-      <SupplementaryButton />
+      <ActionButtonKYC />
+      <ActionButtonFatca />
+      <ActionButtonSupplementary />
     </div>
   );
 };
