@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { InfoBox } from "../common/components/InfoBox";
 import { StatsContainer } from "../common/components/StatsContainer";
 import "./index.styles.css";
+
 export const Home = () => {
   const newsArray = new Array(3).fill({});
   const announcements = new Array(7).fill({});
