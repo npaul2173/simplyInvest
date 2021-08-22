@@ -1,14 +1,27 @@
 import clsx from "clsx";
-import { AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
+import {
+  AiOutlineYoutube,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 import { CgFacebook } from "react-icons/cg";
 import "./index.styles.css";
 
 export const FloatingButtons = () => {
   return (
     <div className="floatingButtonWrapper">
+      <TwitterFloatingButton />
       <FacebookFloatingButton />
       <InstagramFloatingButton />
       <YoutubeFloatingButton />
+    </div>
+  );
+};
+
+const TwitterFloatingButton = () => {
+  return (
+    <div className={clsx("fab", "twitterButton")}>
+      <AiOutlineTwitter className="fabIcons" />
     </div>
   );
 };

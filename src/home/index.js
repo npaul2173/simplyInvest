@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { InfoBox } from "../common/components/InfoBox";
 import { StatsContainer } from "../common/components/StatsContainer";
 import "./index.styles.css";
 export const Home = () => {
   const newsArray = new Array(3).fill({});
   const announcements = new Array(7).fill({});
+  // Use effect
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="homeContainer">
       <div className="homeFirstContainer">

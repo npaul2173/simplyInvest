@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.styles.css";
 export const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="aboutusContainer">
       <h2 className="headers">About us</h2>

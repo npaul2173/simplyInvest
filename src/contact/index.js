@@ -8,7 +8,7 @@ export const ContactForm = () => {
           <span>Get ideas in your inbox</span>
         </div>
         <form autoComplete={"off"}>
-          <input type="text" id="contact_name" name="Name" placeholder="name" />
+          <input type="text" id="contact_name" name="Name" placeholder="Name" />
 
           <input
             type="text"
@@ -17,19 +17,8 @@ export const ContactForm = () => {
             placeholder="Mobile"
           />
 
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
+          <input type="text" id="email" name="email" placeholder="Email Id" />
 
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
           {/* <input type="submit" value="Submit" /> */}
           <button
             className="submitButton"

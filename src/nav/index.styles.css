@@ -34,10 +34,11 @@
 .sidenav {
   overflow-x: hidden;
   position: fixed;
+  z-index: 20;
   width: 300px;
   height: 100vh;
   background: #3B5C90;
-  /* transition: all .5s ease; */
+  transition: all .5s ease;
   overflow: hidden;
   box-shadow: -5px 1px 38px 0px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: -5px 1px 38px 0px rgba(0, 0, 0, 0.16);
@@ -90,11 +91,87 @@
   height: 100;
 }
 
+.appHeader {
+  display: none;
+  width: 100%;
+  height: 70px;
+  z-index: 9999;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 0px 15px 34px -25px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 0px 15px 34px -25px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 15px 34px -25px rgba(0, 0, 0, 0.43);
+}
+
+.menuButton {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.menuButton .logo_img {
+  width: 30px;
+  height: 30px;
+}
+
+.menuButton:active {
+  background-color: rgb(236, 236, 236);
+  transform: scale(.9);
+}
+
+.menuIconStyle {
+  color: #7496CC;
+}
+
 @media screen and (max-width: 900px) {
+  .appHeader {
+    align-items: center;
+    display: flex;
+  }
   .header_bar {
     visibility: hidden;
   }
   .sidenav {
     display: none;
+    width: 0px;
+    transition: 200ms,
+  }
+  .expanded {
+    display: block;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+  .collapsed {
+    display: none;
+    transition: 0.5s ease;
+    width: 0px;
+  }
+  .logo_img {
+    width: 40px;
+    /* background-color: #3B5C90; */
+  }
+  .appHeadingTitle {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    user-select: none;
+    letter-spacing: -0.065em;
+    padding-left: 10px;
+  }
+  .appHeaderContent {
+    /* background-color: #7496CC; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

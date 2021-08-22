@@ -3,7 +3,9 @@
   border-color: #CECECE;
   border-width: 2px;
   border-style: dashed;
-  width: 200px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 2rem;
@@ -27,4 +29,17 @@
   text-align: center;
   color: #393939;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .statsWrapper {
+    flex: 0.5;
+    margin: 0px 10px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .statsWrapper {
+    min-width: 400px;
+  }
 }
