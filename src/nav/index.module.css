@@ -131,6 +131,13 @@
   color: #7496CC;
 }
 
+.downloadButtonPlacer {
+  position: fixed;
+  z-index: 200;
+  bottom: 20px;
+  left: 20px;
+}
+
 @media screen and (max-width: 900px) {
   .appHeader {
     align-items: center;
