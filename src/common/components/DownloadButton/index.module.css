@@ -17,6 +17,11 @@
    outline: none;
    align-items: center;
    justify-content: center;
+   transition: all 0.3s ease;
+ }
+
+ .downloadBtnContainer:hover {
+   transform: scale(1.05);
  }
 
  .downloadBtnContainer:active {
@@ -38,11 +43,16 @@
  @media screen and (max-width: 900px) {
    .downloadBtnContainer {
      display: flex;
-     width: 100%;
+     flex: 1;
+     width: 100vw;
+     height: 60px;
      color: rgb(255, 255, 255);
      background-color: #3B5C90;
      outline: none;
      align-items: center;
      justify-content: center;
+     border-radius: 0px;
+     margin-left: -20px;
+     margin-bottom: -22px;
    }
  }

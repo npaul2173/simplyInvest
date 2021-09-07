@@ -53,3 +53,9 @@
     bottom: 50px;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .floatingButtonWrapper {
+    bottom: 100px;
+  }
+}
