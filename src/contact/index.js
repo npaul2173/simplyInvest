@@ -5,7 +5,7 @@ export const ContactForm = () => {
     <div class="contact_form">
       <div class="container">
         <div class="contact_header">
-          <span>Get ideas in your inbox</span>
+          <span>Get your queries solved here</span>
         </div>
         <form autoComplete={"off"}>
           <input type="text" id="contact_name" name="Name" placeholder="Name" />
