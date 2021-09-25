@@ -4,33 +4,48 @@ import "./index.styles.css";
 
 export const ActionButtonKYC = () => {
   return (
-    <div className={clsx("actionButtonWrapper", "buttonKYCStyle")}>
-      <div className="titleWrapper">Track your KYC status</div>
-      <div className="actionButtonIconWrapper">
-        <AiFillCaretRight className="actionButtonArrowRight" />
+    <a
+      target="_blank"
+      href="https://www.karvykra.com/UPanSearchGlobalWithPanExempt.aspx"
+    >
+      <div className={clsx("actionButtonWrapper", "buttonKYCStyle")}>
+        <div className="titleWrapper">Track your KYC status</div>
+        <div className="actionButtonIconWrapper">
+          <AiFillCaretRight className="actionButtonArrowRight" />
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
 export const ActionButtonFatca = () => {
   return (
-    <div className={clsx("actionButtonWrapper", "buttonFatcaStyle")}>
-      <div className="titleWrapper">Submit your FATCA/CRS</div>
-      <div className="actionButtonIconWrapper">
-        <AiFillCaretRight className="actionButtonArrowRight" />
+    <a
+      target="_blank"
+      href="https://www.camsonline.com/Investors/Service-requests/FATCA&CRS"
+    >
+      <div className={clsx("actionButtonWrapper", "buttonFatcaStyle")}>
+        <div className="titleWrapper">Submit your FATCA/CRS</div>
+        <div className="actionButtonIconWrapper">
+          <AiFillCaretRight className="actionButtonArrowRight" />
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
 export const ActionButtonSupplementary = () => {
   return (
-    <div className={clsx("actionButtonWrapper", "buttonSupplymentaryStyle")}>
-      <div className="titleWrapper">Supplementary KYC</div>
-      <div className="actionButtonIconWrapper">
-        <AiFillCaretRight className="actionButtonArrowRight" />
+    <a
+      target="_blank"
+      href="https://www.pan.utiitsl.com/panaadhaarlink/forms/pan.html/panaadhaar"
+    >
+      <div className={clsx("actionButtonWrapper", "buttonSupplymentaryStyle")}>
+        <div className="titleWrapper">Supplementary KYC</div>
+        <div className="actionButtonIconWrapper">
+          <AiFillCaretRight className="actionButtonArrowRight" />
+        </div>
       </div>
-    </div>
+    </a>
   );
 };

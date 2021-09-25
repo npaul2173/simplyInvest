@@ -20,32 +20,40 @@ export const FloatingButtons = () => {
 
 const TwitterFloatingButton = () => {
   return (
-    <div className={clsx("fab", "twitterButton")}>
-      <AiOutlineTwitter className="fabIcons" />
-    </div>
+    <a target="_blank" href="https://twitter.com/SimplyInvest1">
+      <div className={clsx("fab", "twitterButton")}>
+        <AiOutlineTwitter className="fabIcons" />
+      </div>
+    </a>
   );
 };
 
 const FacebookFloatingButton = () => {
   return (
-    <div className={clsx("fab", "facebookButton")}>
-      <CgFacebook className="fabIcons" />
-    </div>
+    <a target="_blank" href="https://www.facebook.com/simplyinvest">
+      <div className={clsx("fab", "facebookButton")}>
+        <CgFacebook className="fabIcons" />
+      </div>
+    </a>
   );
 };
 
 const InstagramFloatingButton = () => {
   return (
-    <div className={clsx("fab", "instagramButton")}>
-      <AiOutlineInstagram className="fabIcons" />
-    </div>
+    <a target="_blank" href="https://www.facebook.com/simplyinvest">
+      <div className={clsx("fab", "instagramButton")}>
+        <AiOutlineInstagram className="fabIcons" />
+      </div>
+    </a>
   );
 };
 
 const YoutubeFloatingButton = () => {
   return (
-    <div className={clsx("fab", "youtubeButton")}>
-      <AiOutlineYoutube className="fabIcons" />
-    </div>
+    <a target="_blank" href="https://www.facebook.com/simplyinvest">
+      <div className={clsx("fab", "youtubeButton")}>
+        <AiOutlineYoutube className="fabIcons" />
+      </div>{" "}
+    </a>
   );
 };
