@@ -5,6 +5,7 @@ import "./index.styles.css";
 export const ActionButtonKYC = () => {
   return (
     <a
+      rel="noreferrer"
       target="_blank"
       href="https://www.karvykra.com/UPanSearchGlobalWithPanExempt.aspx"
     >
@@ -21,6 +22,7 @@ export const ActionButtonKYC = () => {
 export const ActionButtonFatca = () => {
   return (
     <a
+      rel="noreferrer"
       target="_blank"
       href="https://www.camsonline.com/Investors/Service-requests/FATCA&CRS"
     >
@@ -37,6 +39,7 @@ export const ActionButtonFatca = () => {
 export const ActionButtonSupplementary = () => {
   return (
     <a
+      rel="noreferrer"
       target="_blank"
       href="https://www.pan.utiitsl.com/panaadhaarlink/forms/pan.html/panaadhaar"
     >

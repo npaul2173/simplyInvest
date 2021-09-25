@@ -20,7 +20,11 @@ export const FloatingButtons = () => {
 
 const TwitterFloatingButton = () => {
   return (
-    <a target="_blank" href="https://twitter.com/SimplyInvest1">
+    <a
+      rel="noreferrer"
+      target="_blank"
+      href="https://twitter.com/SimplyInvest1"
+    >
       <div className={clsx("fab", "twitterButton")}>
         <AiOutlineTwitter className="fabIcons" />
       </div>
@@ -30,7 +34,11 @@ const TwitterFloatingButton = () => {
 
 const FacebookFloatingButton = () => {
   return (
-    <a target="_blank" href="https://www.facebook.com/simplyinvest">
+    <a
+      rel="noreferrer"
+      target="_blank"
+      href="https://www.facebook.com/simplyinvest"
+    >
       <div className={clsx("fab", "facebookButton")}>
         <CgFacebook className="fabIcons" />
       </div>
@@ -40,7 +48,11 @@ const FacebookFloatingButton = () => {
 
 const InstagramFloatingButton = () => {
   return (
-    <a target="_blank" href="https://www.facebook.com/simplyinvest">
+    <a
+      rel="noreferrer"
+      target="_blank"
+      href="https://www.facebook.com/simplyinvest"
+    >
       <div className={clsx("fab", "instagramButton")}>
         <AiOutlineInstagram className="fabIcons" />
       </div>
@@ -50,7 +62,11 @@ const InstagramFloatingButton = () => {
 
 const YoutubeFloatingButton = () => {
   return (
-    <a target="_blank" href="https://www.facebook.com/simplyinvest">
+    <a
+      rel="noreferrer"
+      target="_blank"
+      href="https://www.facebook.com/simplyinvest"
+    >
       <div className={clsx("fab", "youtubeButton")}>
         <AiOutlineYoutube className="fabIcons" />
       </div>{" "}
