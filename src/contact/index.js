@@ -19,6 +19,14 @@ export const ContactForm = () => {
 
           <input type="text" id="email" name="email" placeholder="Email Id" />
 
+          <textarea
+            style={{ height: 80 }}
+            rows="12"
+            cols="60"
+            name="text"
+            placeholder="Your Message"
+          ></textarea>
+
           {/* <input type="submit" value="Submit" /> */}
           <button
             className="submitButton"
