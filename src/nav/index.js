@@ -8,6 +8,7 @@ import { CgMenuLeft, CgClose } from "react-icons/cg";
 import { useState } from "react";
 import clsx from "clsx";
 import { DownloadButton } from "../common/components/DownloadButton";
+import { StatsContainer } from "../common/components/StatsContainer";
 
 const MenuButton = ({ onClick = () => {}, menuVisible = false }) => {
   return (
@@ -75,6 +76,7 @@ export const NavBar = () => {
       </div>
 
       <div className={styles.downloadButtonPlacer}>
+        <StatsContainer statTitle="No of visitors" statNumber="210" />
         <DownloadButton />
       </div>
     </>

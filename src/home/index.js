@@ -72,14 +72,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* Stats */}
-      <div className="statsSectionWrapper">
-        <StatsContainer statTitle="Participants" statNumber="9500+" />
-        <StatsContainer statTitle="Courses" statNumber="20+" />
-        <StatsContainer statTitle="Trainers" statNumber="13+" />
-        <StatsContainer statTitle="Visitors" statNumber="175+" />
-      </div>
     </div>
   );
 };

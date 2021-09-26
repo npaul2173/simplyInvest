@@ -1,4 +1,5 @@
 import { AboutUs } from "../aboutUs";
+import { ContactScreen } from "../contactPage";
 import { Home } from "../home";
 
 const OurServices = () => {
@@ -30,9 +31,6 @@ const Disclaimer = () => {
 const JoinUs = () => {
   return <h1>Join Us</h1>;
 };
-const Contactus = () => {
-  return <h1>Contact us</h1>;
-};
 
 export const LowerRoutes = [
   {
@@ -58,7 +56,7 @@ export const LowerRoutes = [
   {
     path: "/contactUs",
     sidebarName: "Contact us",
-    component: Contactus,
+    component: ContactScreen,
   },
 ];
 
