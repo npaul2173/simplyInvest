@@ -1,3 +1,4 @@
+import React from "react";
 import "./index.styles.css";
 
 export const ContactForm = () => {
@@ -28,14 +29,7 @@ export const ContactForm = () => {
           ></textarea>
 
           {/* <input type="submit" value="Submit" /> */}
-          <button
-            className="submitButton"
-            onClick={() => {
-              console.log("clicled");
-            }}
-          >
-            Submit
-          </button>
+          <button className="submitButton">Submit</button>
         </form>
       </div>
     </div>

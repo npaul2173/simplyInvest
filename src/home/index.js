@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { InfoBox } from "../common/components/InfoBox";
-import { StatsContainer } from "../common/components/StatsContainer";
 import "./index.styles.css";
 
 export const Home = () => {

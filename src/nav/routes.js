@@ -65,6 +65,7 @@ export const Routes = [
     path: "/",
     sidebarName: "Home",
     component: Home,
+    exact: true,
   },
   {
     path: "/aboutUs",
