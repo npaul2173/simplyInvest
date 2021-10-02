@@ -8,7 +8,7 @@ export const AboutUs = () => {
   return (
     <div className="aboutusContainer">
       <h2 className="headers">About us</h2>
-      <div class="aboutusContent">
+      <div className="aboutusContent">
         We are one of the transparent, dynamic and un-biased professional Mutual
         Fund Distributor firm based out of Kolkata offering personalized
         services in a wide range of investment products like Mutual Funds,
@@ -31,7 +31,7 @@ export const AboutUs = () => {
 
       <div className="ourvaluesContainer">
         <h2 className="headers">Our values</h2>
-        <div class="aboutusContent">
+        <div className="aboutusContent">
           We are one of the transparent, dynamic and un-biased professional
           Mutual Fund Distributor firm based out of Kolkata offering
           personalized services in a wide range of investment products like
