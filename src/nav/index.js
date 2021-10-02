@@ -26,6 +26,7 @@ const MenuButton = ({ onClick = () => {}, menuVisible = false }) => {
 };
 export const NavBar = () => {
   const location = useLocation();
+  const [VisitorCount, setVisitorCount] = useState(null);
   const [hoverRoute, setHoverRoute] = useState("");
   const [menuVisible, setMenuVisible] = useState(false);
   const toggleSidenav = () => {
@@ -35,6 +36,7 @@ export const NavBar = () => {
   useEffect(() => {
     fetch(APP_URLS.VISITOR_COUNT).then(async (response) => {
       const responseJson = await response.json();
+      setVisitorCount(responseJson);
     });
   }, []);
   return (
@@ -111,10 +113,15 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <div className={styles.downloadButtonPlacer}>
-        <StatsContainer statTitle="No of visitors" statNumber="210" />
-        <DownloadButton />
-      </div>
+      {VisitorCount != 0 && (
+        <div className={styles.downloadButtonPlacer}>
+          <StatsContainer
+            statTitle="No of visitors"
+            statNumber={VisitorCount}
+          />
+          <DownloadButton />
+        </div>
+      )}
     </>
   );
 };
