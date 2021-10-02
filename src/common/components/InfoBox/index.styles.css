@@ -5,6 +5,7 @@
   border-radius: 9px;
   margin-bottom: 10px;
   padding: 20px;
+  min-height: 80px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -23,12 +24,22 @@
   line-height: 110%;
 }
 
+.infoBox a:visited {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .infoDescription {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 110%;
+  max-width: 500px;
   color: #3B5C90;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .infoContent {

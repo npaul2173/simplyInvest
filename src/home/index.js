@@ -1,15 +1,43 @@
 import React, { useEffect } from "react";
+import { APP_URLS } from "../api/endpoints";
 import { InfoBox } from "../common/components/InfoBox";
 import "./index.styles.css";
 
+export const ANNOUNCEMENTS_TYPE = {
+  IMPORTANT: "IMPORTANT",
+  MF: "MF",
+  EXPERT: "EXPERT",
+};
 export const Home = () => {
-  const newsArray = new Array(3).fill({});
-  const announcements = new Array(7).fill({});
+  const [announceMents, setAnnoucements] = React.useState({
+    mfData: [],
+    impData: [],
+    expData: [],
+  });
+
   // Use effect
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    fetch(APP_URLS.ANNOUNCEMENTS)
+      .then((response) => response.json())
+      .then((responseJson) => {
+        const mfData = responseJson.filter(
+          (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.MF
+        );
+        const impData = responseJson.filter(
+          (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.IMPORTANT
+        );
+        const expData = responseJson.filter(
+          (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.EXPERT
+        );
+        setAnnoucements({ mfData, impData, expData });
+      });
+  }, []);
+
+  console.log({ announceMents });
   return (
     <div className="homeContainer">
       <div className="homeFirstContainer">
@@ -19,12 +47,13 @@ export const Home = () => {
           </div>
 
           <div className="infowrapper">
-            {newsArray.map(() => {
+            {announceMents.mfData.map((item, index) => {
               return (
                 <InfoBox
+                  key={item.announcement_id}
                   dataEntity={{
-                    title: "Market manners",
-                    description: "link to description",
+                    title: item.title,
+                    description: item.description_link,
                   }}
                 />
               );
@@ -39,12 +68,13 @@ export const Home = () => {
           </div>
 
           <div className="infowrapper">
-            {newsArray.map(() => {
+            {announceMents.expData.map((item, index) => {
               return (
                 <InfoBox
+                  key={item.announcement_id}
                   dataEntity={{
-                    title: "Market manners",
-                    description: "link to description",
+                    title: item.title,
+                    description: item.description_link,
                   }}
                 />
               );
@@ -58,12 +88,13 @@ export const Home = () => {
           </div>
 
           <div className="infowrapper">
-            {announcements.map(() => {
+            {announceMents.impData.map((item, index) => {
               return (
                 <InfoBox
+                  key={item.announcement_id}
                   dataEntity={{
-                    title: "Market manners",
-                    description: "link to description",
+                    title: item.title,
+                    description: item.description_link,
                   }}
                 />
               );
