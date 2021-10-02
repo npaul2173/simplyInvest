@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
 import Logo from "../assets/svgs/LOGO.svg";
 import NavBackground from "../assets/svgs/NavLowerbackgroung.svg";
@@ -11,6 +11,7 @@ import { StatsContainer } from "../common/components/StatsContainer";
 import { AiFillCaretRight } from "react-icons/ai";
 import { matchPath } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { APP_URLS } from "../api/endpoints";
 
 const MenuButton = ({ onClick = () => {}, menuVisible = false }) => {
   return (
@@ -25,12 +26,19 @@ const MenuButton = ({ onClick = () => {}, menuVisible = false }) => {
 };
 export const NavBar = () => {
   const location = useLocation();
+  const [VisitorCount, setVisitorCount] = useState(null);
   const [hoverRoute, setHoverRoute] = useState("");
   const [menuVisible, setMenuVisible] = useState(false);
   const toggleSidenav = () => {
     setMenuVisible((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    fetch(APP_URLS.VISITOR_COUNT).then(async (response) => {
+      const responseJson = await response.json();
+      setVisitorCount(responseJson);
+    });
+  }, []);
   return (
     <>
       {/* app heading */}
@@ -49,7 +57,7 @@ export const NavBar = () => {
           menuVisible ? styles.expanded : styles.collapsed
         )}
       >
-        <div class={styles.header_bar}>
+        <div className={styles.header_bar}>
           <img className={styles.logo_img} src={Logo} alt="simplyInvest" />
           <header>Simply invest</header>
         </div>
@@ -67,7 +75,7 @@ export const NavBar = () => {
           );
 
           return (
-            <div onClick={toggleSidenav}>
+            <div key={key.toString()} onClick={toggleSidenav}>
               <NavLink
                 onMouseEnter={() => setHoverRoute(key)}
                 onMouseLeave={() => setHoverRoute("")}
@@ -105,10 +113,15 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <div className={styles.downloadButtonPlacer}>
-        <StatsContainer statTitle="No of visitors" statNumber="210" />
-        <DownloadButton />
-      </div>
+      {VisitorCount != 0 && (
+        <div className={styles.downloadButtonPlacer}>
+          <StatsContainer
+            statTitle="No of visitors"
+            statNumber={VisitorCount}
+          />
+          <DownloadButton />
+        </div>
+      )}
     </>
   );
 };

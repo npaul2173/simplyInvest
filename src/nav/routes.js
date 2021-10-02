@@ -1,5 +1,6 @@
 import { AboutUs } from "../aboutUs";
 import { ContactScreen } from "../contactPage";
+import { Disclaimer } from "../Disclaimer";
 import { Home } from "../home";
 
 const OurServices = () => {
@@ -25,9 +26,6 @@ const Associates = () => {
   return <h1>Associates</h1>;
 };
 
-const Disclaimer = () => {
-  return <h1>Disclaimer</h1>;
-};
 const JoinUs = () => {
   return <h1>Join Us</h1>;
 };

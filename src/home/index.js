@@ -37,7 +37,6 @@ export const Home = () => {
       });
   }, []);
 
-  console.log({ announceMents });
   return (
     <div className="homeContainer">
       <div className="homeFirstContainer">
@@ -50,7 +49,7 @@ export const Home = () => {
             {announceMents.mfData.map((item, index) => {
               return (
                 <InfoBox
-                  key={item.announcement_id}
+                  key={index.toString()}
                   dataEntity={{
                     title: item.title,
                     description: item.description_link,
@@ -71,7 +70,7 @@ export const Home = () => {
             {announceMents.expData.map((item, index) => {
               return (
                 <InfoBox
-                  key={item.announcement_id}
+                  key={index.toString()}
                   dataEntity={{
                     title: item.title,
                     description: item.description_link,
@@ -91,7 +90,7 @@ export const Home = () => {
             {announceMents.impData.map((item, index) => {
               return (
                 <InfoBox
-                  key={item.announcement_id}
+                  key={index.toString()}
                   dataEntity={{
                     title: item.title,
                     description: item.description_link,

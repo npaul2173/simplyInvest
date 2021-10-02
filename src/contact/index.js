@@ -3,9 +3,9 @@ import "./index.styles.css";
 
 export const ContactForm = () => {
   return (
-    <div class="contact_form">
-      <div class="container">
-        <div class="contact_header">
+    <div className="contact_form">
+      <div className="container">
+        <div className="contact_header">
           <span>Get your queries solved here</span>
         </div>
         <form autoComplete={"off"}>
