@@ -113,7 +113,7 @@ export const NavBar = () => {
         </div>
       </div>
 
-      {VisitorCount != 0 && (
+      {VisitorCount !== 0 && (
         <div className={styles.downloadButtonPlacer}>
           <StatsContainer
             statTitle="No of visitors"
