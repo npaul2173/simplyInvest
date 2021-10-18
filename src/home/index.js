@@ -3,10 +3,26 @@ import { APP_URLS } from "../api/endpoints";
 import { InfoBox } from "../common/components/InfoBox";
 import "./index.styles.css";
 
+const arrayThree = new Array(3).fill({});
 export const ANNOUNCEMENTS_TYPE = {
   IMPORTANT: "IMPORTANT",
   MF: "MF",
   EXPERT: "EXPERT",
+};
+
+const Skeleton = () => {
+  return (
+    <div className="prod--wrapper">
+      <div className="prod--col prod--details">
+        <div className="prod--row prod--name">
+          <span
+            id="productName"
+            className="prod--name-text skeleton-loader"
+          ></span>
+        </div>
+      </div>
+    </div>
+  );
 };
 export const Home = () => {
   const [announceMents, setAnnoucements] = React.useState({
@@ -45,23 +61,30 @@ export const Home = () => {
             <span className="headers">MF News</span>
           </div>
 
-          <div className="infowrapper">
-            {announceMents.mfData.map((item, index) => {
-              return (
-                <InfoBox
-                  key={index.toString()}
-                  dataEntity={{
-                    title: item.title,
-                    description: item.description_link,
-                  }}
-                />
-              );
-            })}
-          </div>
+          {announceMents.mfData.length !== 0 ? (
+            <div className="infowrapper">
+              {announceMents.mfData.map((item, index) => {
+                return (
+                  <InfoBox
+                    key={index.toString()}
+                    dataEntity={{
+                      title: item.title,
+                      description: item.description_link,
+                    }}
+                  />
+                );
+              })}
+            </div>
+          ) : (
+            <div className="skeletonContainer">
+              {arrayThree.map(() => (
+                <Skeleton />
+              ))}
+            </div>
+          )}
 
           <div className="gapwrapper"></div>
 
-          {/* Expert views section */}
           <div className="headerTitle">
             <span className="headers">Expert views</span>
           </div>
@@ -83,7 +106,7 @@ export const Home = () => {
 
         <div className="leftContainer">
           <div className="headerTitle">
-            <span className="headers">Important announcements</span>
+            <span className="headers">Important Announcements</span>
           </div>
 
           <div className="infowrapper">
