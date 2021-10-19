@@ -1,5 +1,5 @@
  .lowernav {
-   background-color: rgb(255, 255, 255);
+   background-color: #3B5C90;
    /* overflow: hidden; */
    position: fixed;
    bottom: 0;
@@ -20,10 +20,10 @@
 
  .lowernav a {
    padding: 20px;
-   background-color: rgb(255, 255, 255);
+   background-color: #3B5C90;
    font-family: 'Roboto Condensed' !important;
    font-weight: 400;
-   color: black;
+   color: rgb(255, 255, 255);
    margin-right: 30px;
    font-size: 20px;
  }
@@ -32,9 +32,14 @@
    color: rgb(255, 255, 255);
  }
 
+ .lowerNavSelected {
+   background-color: #7496CC;
+ }
+
  .lowernav a:hover {
    padding: 20px;
-   background: linear-gradient(0deg, rgba(234, 100, 33, 1) 0%, rgba(234, 151, 33, 1) 100%);
+   background-color: #7496CC;
+   /* background: linear-gradient(0deg, rgba(234, 100, 33, 1) 0%, rgba(234, 151, 33, 1) 100%); */
  }
 
  .lowernav .navSpan {
@@ -49,10 +54,9 @@
  }
 
  .infoConatiner h4 {
-   background-color: rgb(255, 255, 255);
    font-family: 'Roboto Condensed' !important;
    font-weight: 700;
-   color: #A4A4A4;
+   color: #ffffff;
    font-size: 20px;
    margin-left: 40px;
  }

@@ -1,15 +1,21 @@
+import React from "react";
+import styles from "./index.module.css";
 export const ContactScreen = () => {
   return (
     <div>
       <h1>Contact us</h1>
+
+      {/* <div className={styles.mapView}> */}
       <iframe
+        className={styles.mapView}
         title="MapofSimplyInvest"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921.0059918520243!2d88.38934182922833!3d22.57820689907373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02766f99dc3005%3A0xb55e7d8613e8b7ed!2sValue%20You!5e0!3m2!1sen!2sin!4v1632558309572!5m2!1sen!2sin"
-        width="600px"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14736.098949533562!2d88.3898399!3d22.5781781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e3bcf6fc0ac5a79!2sSimply%20Invest!5e0!3m2!1sen!2sin!4v1634647376331!5m2!1sen!2sin"
+        width="100%"
         height="450px"
-        allowfullscreen=""
+        allowFullScreen
         loading="lazy"
       ></iframe>
+      {/* </div> */}
     </div>
   );
 };

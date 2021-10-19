@@ -38,21 +38,25 @@ export const Home = () => {
   }, []);
 
   useEffect(() => {
-    fetch(APP_URLS.ANNOUNCEMENTS)
-      .then((response) => response.json())
-      .then((responseJson) => {
-        setLoader(false);
-        const mfData = responseJson.filter(
-          (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.MF
-        );
-        const impData = responseJson.filter(
-          (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.IMPORTANT
-        );
-        const expData = responseJson.filter(
-          (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.EXPERT
-        );
-        setAnnoucements({ mfData, impData, expData });
-      });
+    try {
+      fetch(APP_URLS?.ANNOUNCEMENTS)
+        .then((response) => response.json())
+        .then((responseJson) => {
+          setLoader(false);
+          const mfData = responseJson.filter(
+            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.MF
+          );
+          const impData = responseJson.filter(
+            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.IMPORTANT
+          );
+          const expData = responseJson.filter(
+            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.EXPERT
+          );
+          setAnnoucements({ mfData, impData, expData });
+        });
+    } catch (error) {
+      console.log("Best error ever", error);
+    }
   }, []);
 
   return (

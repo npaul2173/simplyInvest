@@ -1,0 +1,8 @@
+.mapView {
+  border-style: none;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -2px 18px 61px -25px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 18px 61px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 18px 61px -25px rgba(0, 0, 0, 0.75);
+}
