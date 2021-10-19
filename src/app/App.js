@@ -9,11 +9,13 @@ import { ContactForm } from "../contact";
 import { LowerNav } from "../lowerNav";
 import { FloatingButtons } from "../floatingButtons";
 import { ActionBarSection } from "../ActionBarSection";
+import { ToastMessage } from "../common/components/Toast";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="mainWrapper">
+        <ToastMessage />
         <NavBar />
         <div className="contentWrapper">
           <div className="box1">

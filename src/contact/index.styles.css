@@ -27,6 +27,7 @@ input[type="text"], select, textarea {
 }
 
 .submitButton {
+  cursor: pointer;
   background-color: #3b5c90;
   color: white;
   padding: 12px 20px;
