@@ -25,6 +25,7 @@ const Skeleton = () => {
   );
 };
 export const Home = () => {
+  const [loader, setLoader] = React.useState(true);
   const [announceMents, setAnnoucements] = React.useState({
     mfData: [],
     impData: [],
@@ -40,6 +41,7 @@ export const Home = () => {
     fetch(APP_URLS.ANNOUNCEMENTS)
       .then((response) => response.json())
       .then((responseJson) => {
+        setLoader(false);
         const mfData = responseJson.filter(
           (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.MF
         );
@@ -61,7 +63,7 @@ export const Home = () => {
             <span className="headers">MF News</span>
           </div>
 
-          {announceMents.mfData.length !== 0 ? (
+          {!loader ? (
             <div className="infowrapper">
               {announceMents.mfData.map((item, index) => {
                 return (
@@ -88,20 +90,27 @@ export const Home = () => {
           <div className="headerTitle">
             <span className="headers">Expert views</span>
           </div>
-
-          <div className="infowrapper">
-            {announceMents.expData.map((item, index) => {
-              return (
-                <InfoBox
-                  key={index.toString()}
-                  dataEntity={{
-                    title: item.title,
-                    description: item.description_link,
-                  }}
-                />
-              );
-            })}
-          </div>
+          {!loader ? (
+            <div className="infowrapper">
+              {announceMents.expData.map((item, index) => {
+                return (
+                  <InfoBox
+                    key={index.toString()}
+                    dataEntity={{
+                      title: item.title,
+                      description: item.description_link,
+                    }}
+                  />
+                );
+              })}
+            </div>
+          ) : (
+            <div className="skeletonContainer">
+              {arrayThree.map(() => (
+                <Skeleton />
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="leftContainer">
@@ -109,19 +118,27 @@ export const Home = () => {
             <span className="headers">Important Announcements</span>
           </div>
 
-          <div className="infowrapper">
-            {announceMents.impData.map((item, index) => {
-              return (
-                <InfoBox
-                  key={index.toString()}
-                  dataEntity={{
-                    title: item.title,
-                    description: item.description_link,
-                  }}
-                />
-              );
-            })}
-          </div>
+          {!loader ? (
+            <div className="infowrapper">
+              {announceMents.impData.map((item, index) => {
+                return (
+                  <InfoBox
+                    key={index.toString()}
+                    dataEntity={{
+                      title: item.title,
+                      description: item.description_link,
+                    }}
+                  />
+                );
+              })}
+            </div>
+          ) : (
+            <div className="skeletonContainer">
+              {arrayThree.map(() => (
+                <Skeleton />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
