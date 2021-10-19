@@ -1,8 +1,7 @@
 import clsx from "clsx";
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { matchPath } from "react-router-dom";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { LowerRoutes } from "../nav/routes";
 import "./index.styles.css";
 

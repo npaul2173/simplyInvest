@@ -20,7 +20,7 @@
 
  .lowernav a {
    padding: 20px;
-   background-color: #3B5C90;
+   /* background-color: #3B5C90; */
    font-family: 'Roboto Condensed' !important;
    font-weight: 400;
    color: rgb(255, 255, 255);
