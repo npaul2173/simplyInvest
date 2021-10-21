@@ -1,14 +1,11 @@
-import { AboutUs } from "../aboutUs";
-import { ContactScreen } from "../contactPage";
-import { Disclaimer } from "../Disclaimer";
-import { Home } from "../home";
+import { AboutUs } from "../screens/aboutUs";
+import { ContactScreen } from "../screens/contactPage";
+import { Disclaimer } from "../screens/Disclaimer";
+import { Home } from "../screens/home";
+import { Parivartan } from "../screens/Parivartan";
 
 const OurServices = () => {
   return <h1>Our Services</h1>;
-};
-
-const Parivartan = () => {
-  return <h1>Parivartan</h1>;
 };
 
 const LearningCenter = () => {

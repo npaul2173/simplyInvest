@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { APP_URLS } from "../api/endpoints";
-import { InfoBox } from "../common/components/InfoBox";
+import { APP_URLS } from "../../api/endpoints";
+import { InfoBox } from "../../common/components/InfoBox";
 import "./index.styles.css";
 
 const arrayThree = new Array(3).fill({});
