@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { APP_URLS } from "../../api/endpoints";
 import { InfoBox } from "../../common/components/InfoBox";
+import { AppContext } from "../../common/utils/Container";
 import "./index.styles.css";
 
 const arrayThree = new Array(3).fill({});
@@ -25,38 +26,12 @@ const Skeleton = () => {
   );
 };
 export const Home = () => {
-  const [loader, setLoader] = React.useState(true);
-  const [announceMents, setAnnoucements] = React.useState({
-    mfData: [],
-    impData: [],
-    expData: [],
-  });
+  const appContextValues = useContext(AppContext);
+  const { announceMents, announceMentsLoader } = { ...appContextValues };
 
   // Use effect
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    try {
-      fetch(APP_URLS?.ANNOUNCEMENTS)
-        .then((response) => response.json())
-        .then((responseJson) => {
-          setLoader(false);
-          const mfData = responseJson.filter(
-            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.MF
-          );
-          const impData = responseJson.filter(
-            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.IMPORTANT
-          );
-          const expData = responseJson.filter(
-            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.EXPERT
-          );
-          setAnnoucements({ mfData, impData, expData });
-        });
-    } catch (error) {
-      console.log("Best error ever", error);
-    }
   }, []);
 
   return (
@@ -67,7 +42,7 @@ export const Home = () => {
             <span className="headers">MF News</span>
           </div>
 
-          {!loader ? (
+          {!announceMentsLoader ? (
             <div className="infowrapper">
               {announceMents.mfData.map((item, index) => {
                 return (
@@ -94,7 +69,7 @@ export const Home = () => {
           <div className="headerTitle">
             <span className="headers">Expert views</span>
           </div>
-          {!loader ? (
+          {!announceMentsLoader ? (
             <div className="infowrapper">
               {announceMents.expData.map((item, index) => {
                 return (
@@ -122,7 +97,7 @@ export const Home = () => {
             <span className="headers">Important Announcements</span>
           </div>
 
-          {!loader ? (
+          {!announceMentsLoader ? (
             <div className="infowrapper">
               {announceMents.impData.map((item, index) => {
                 return (

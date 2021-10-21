@@ -2,17 +2,12 @@ import { AboutUs } from "../screens/aboutUs";
 import { ContactScreen } from "../screens/contactPage";
 import { Disclaimer } from "../screens/Disclaimer";
 import { Home } from "../screens/home";
+import { InvestOnline } from "../screens/InvestOnline";
+import { LearningCenter } from "../screens/LearningCentre";
 import { Parivartan } from "../screens/Parivartan";
 
 const OurServices = () => {
   return <h1>Our Services</h1>;
-};
-
-const LearningCenter = () => {
-  return <h1>Learning Center</h1>;
-};
-const InvestOnline = () => {
-  return <h1>Invest online</h1>;
 };
 
 const Sip = () => {

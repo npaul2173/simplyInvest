@@ -1,7 +1,43 @@
 import React, { Component, useEffect } from "react";
 import { APP_URLS } from "../../../api/endpoints";
 
+export const AppContext = React.createContext();
+const ANNOUNCEMENTS_TYPE = {
+  IMPORTANT: "IMPORTANT",
+  MF: "MF",
+  EXPERT: "EXPERT",
+};
+
 export const AppContainer = ({ children }) => {
+  const [loader, setLoader] = React.useState(true);
+  const [announceMents, setAnnoucements] = React.useState({
+    mfData: [],
+    impData: [],
+    expData: [],
+  });
+
+  useEffect(() => {
+    try {
+      fetch(APP_URLS?.ANNOUNCEMENTS)
+        .then((response) => response.json())
+        .then((responseJson) => {
+          setLoader(false);
+          const mfData = responseJson.filter(
+            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.MF
+          );
+          const impData = responseJson.filter(
+            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.IMPORTANT
+          );
+          const expData = responseJson.filter(
+            (item) => item.announcement_type === ANNOUNCEMENTS_TYPE.EXPERT
+          );
+          setAnnoucements({ mfData, impData, expData });
+        });
+    } catch (error) {
+      console.log("Best error ever", error);
+    }
+  }, []);
+
   const getMachineInfo = () => {
     fetch(APP_URLS.GET_MACHINE_DATA).then(async (response) => {
       const responseJson = await response.json();
@@ -15,7 +51,7 @@ export const AppContainer = ({ children }) => {
       try {
         fetch(APP_URLS.ADD_VISITOR, {
           method: "POST",
-          body: `ip_address=34343`,
+          body: `ip_address=${responseJson.IPv4}`,
           headers: headersList,
         }).then(async (response) => {
           localStorage.setItem("user", responseJson.IPv4);
@@ -36,5 +72,13 @@ export const AppContainer = ({ children }) => {
     }
   }, []);
 
-  return <>{children}</>;
+  return (
+    <>
+      <AppContext.Provider
+        value={{ announceMents, announceMentsLoader: loader }}
+      >
+        {children}
+      </AppContext.Provider>
+    </>
+  );
 };
