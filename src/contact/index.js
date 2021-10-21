@@ -24,19 +24,24 @@ export const ContactForm = () => {
         x.className = x.className.replace("show", "");
       }, 3000);
     };
-    launch_toast();
-    // console.log({ name, mobileNumber, emailID, description });
-    // fetch(APP_URLS.SAVE_CONTACT, {
-    //   method: "POST",
-    //   body: `Name=${name}&Mobile=${mobileNumber}&Email=${emailID}&Description=${description}`,
-    //   headers: headersList,
-    // })
-    //   .then(function (response) {
-    //     return response.json();
-    //   })
-    //   .then(function (data) {
-    //     console.log(data);
-    //   });
+
+    console.log({ name, mobileNumber, emailID, description });
+    fetch(APP_URLS.SAVE_CONTACT, {
+      method: "POST",
+      body: `Name=${name}&Mobile=${mobileNumber}&Email=${emailID}&Description=${description}`,
+      headers: headersList,
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+        setName("");
+        setDescription("");
+        setEmailID("");
+        setMobileNumber("");
+        launch_toast();
+      });
   };
 
   return (
@@ -51,14 +56,16 @@ export const ContactForm = () => {
             id="contact_name"
             name="Name"
             placeholder="Name"
+            value={name}
             onInput={(e) => setName(e.target.value)}
           />
 
           <input
-            type="text"
             id="contact_mobile"
             name="Mobile"
+            type="number"
             placeholder="Mobile"
+            value={mobileNumber}
             onInput={(e) => setMobileNumber(e.target.value)}
           />
 
@@ -67,6 +74,7 @@ export const ContactForm = () => {
             id="email"
             name="email"
             placeholder="Email Id"
+            value={emailID}
             onInput={(e) => setEmailID(e.target.value)}
           />
 

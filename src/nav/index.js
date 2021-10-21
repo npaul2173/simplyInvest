@@ -63,9 +63,9 @@ export const NavBar = () => {
         </div>
 
         <div className={styles.regis_bar}>
-          <span className={styles.regis_text}>
-            AMFI - registered mutual fund distributer
-          </span>
+          <p className={styles.regis_text}>
+            AMFI -registered mutual fund distributer
+          </p>
         </div>
 
         {Routes.map((prop, key) => {
@@ -103,7 +103,14 @@ export const NavBar = () => {
             </div>
           );
         })}
-
+        <div className={styles.visitsCount}>
+          {VisitorCount !== 0 && (
+            <StatsContainer
+              statTitle="No of visitors"
+              statNumber={VisitorCount}
+            />
+          )}
+        </div>
         <div className={styles.navBackgroundContainer}>
           <img
             className={styles.navBackground}
@@ -113,15 +120,9 @@ export const NavBar = () => {
         </div>
       </div>
 
-      {VisitorCount !== 0 && (
-        <div className={styles.downloadButtonPlacer}>
-          <StatsContainer
-            statTitle="No of visitors"
-            statNumber={VisitorCount}
-          />
-          <DownloadButton />
-        </div>
-      )}
+      <div className={styles.downloadButtonPlacer}>
+        <DownloadButton />
+      </div>
     </>
   );
 };

@@ -158,6 +158,14 @@
   color: #f1f1f1;
 }
 
+.visitsCount {
+  z-index: 200;
+  position: fixed;
+  padding: 20px;
+  bottom: 70px;
+  width: 275px;
+}
+
 .downloadButtonPlacer {
   position: fixed;
   z-index: 200;
@@ -166,6 +174,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .visitsCount {
+    width: 100%;
+  }
   .appHeader {
     align-items: center;
     display: flex;
