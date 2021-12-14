@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import { APP_URLS } from "../../../api/endpoints";
 
 export const AppContext = React.createContext();

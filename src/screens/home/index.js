@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { APP_URLS } from "../../api/endpoints";
+
 import { InfoBox } from "../../common/components/InfoBox";
 import { AppContext } from "../../common/utils/Container";
 import "./index.styles.css";

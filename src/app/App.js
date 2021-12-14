@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 import { NavBar } from "../nav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { LowerRoutes, Routes } from "../nav/routes";
@@ -8,7 +8,7 @@ import { LowerNav } from "../lowerNav";
 import { FloatingButtons } from "../floatingButtons";
 import { ActionBarSection } from "../ActionBarSection";
 import { ToastMessage } from "../common/components/Toast";
-import { APP_URLS } from "../api/endpoints";
+
 import { AppContainer } from "../common/utils/Container";
 
 const App = () => {
