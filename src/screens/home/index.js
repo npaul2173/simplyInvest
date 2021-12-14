@@ -44,17 +44,19 @@ export const Home = () => {
 
           {!announceMentsLoader ? (
             <div className="infowrapper">
-              {announceMents.mfData.map((item, index) => {
-                return (
-                  <InfoBox
-                    key={index.toString()}
-                    dataEntity={{
-                      title: item.title,
-                      description: item.description_link,
-                    }}
-                  />
-                );
-              })}
+              {announceMents.mfData
+                .map((item, index) => {
+                  return (
+                    <InfoBox
+                      key={index.toString()}
+                      dataEntity={{
+                        title: item.title,
+                        description: item.description_link,
+                      }}
+                    />
+                  );
+                })
+                .reverse()}
             </div>
           ) : (
             <div className="skeletonContainer">
@@ -71,17 +73,19 @@ export const Home = () => {
           </div>
           {!announceMentsLoader ? (
             <div className="infowrapper">
-              {announceMents.expData.map((item, index) => {
-                return (
-                  <InfoBox
-                    key={index.toString()}
-                    dataEntity={{
-                      title: item.title,
-                      description: item.description_link,
-                    }}
-                  />
-                );
-              })}
+              {announceMents.expData
+                .map((item, index) => {
+                  return (
+                    <InfoBox
+                      key={index.toString()}
+                      dataEntity={{
+                        title: item.title,
+                        description: item.description_link,
+                      }}
+                    />
+                  );
+                })
+                .reverse()}
             </div>
           ) : (
             <div className="skeletonContainer">
@@ -99,17 +103,19 @@ export const Home = () => {
 
           {!announceMentsLoader ? (
             <div className="infowrapper">
-              {announceMents.impData.map((item, index) => {
-                return (
-                  <InfoBox
-                    key={index.toString()}
-                    dataEntity={{
-                      title: item.title,
-                      description: item.description_link,
-                    }}
-                  />
-                );
-              })}
+              {announceMents.impData
+                .map((item, index) => {
+                  return (
+                    <InfoBox
+                      key={index.toString()}
+                      dataEntity={{
+                        title: item.title,
+                        description: item.description_link,
+                      }}
+                    />
+                  );
+                })
+                .reverse()}
             </div>
           ) : (
             <div className="skeletonContainer">
