@@ -22,6 +22,45 @@
   right: 20px;
 }
 
+.contactButton {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 5px 20px #00000033;
+  background-color: #f0b000;
+}
+
+.fabSectionsWrapperClosed {
+  opacity: 1;
+  bottom: 100%;
+  position: absolute;
+  transition: all 0.4s;
+}
+
+.fabSectionsWrapper {
+  opacity: 0;
+  bottom: 50%;
+  position: absolute;
+  transition: all 0.4s;
+}
+
+.contactButton.open {
+  opacity: 1;
+  background-color: #d19900;
+  transform: rotate(270deg);
+  transition: all 0.4s;
+}
+
+
+
+
 .instagramButton {
   box-shadow: 0px 5px 20px #594e6b;
   background: linear-gradient(163.7deg, #313CD0 1.89%, #B023AE 38.47%, #E8395B 71.62%, #F5A336 107.99%);

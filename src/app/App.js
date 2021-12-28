@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "../nav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { LowerRoutes, Routes } from "../nav/routes";
@@ -12,6 +12,12 @@ import { ToastMessage } from "../common/components/Toast";
 import { AppContainer } from "../common/utils/Container";
 
 const App = () => {
+  useEffect(() => {
+    const wd = window.screen.availHeight;
+    const hd = window.screen.availWidth;
+
+    console.log({ wd, hd });
+  }, []);
   return (
     <AppContainer>
       <BrowserRouter>

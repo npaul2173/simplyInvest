@@ -4,16 +4,45 @@ import {
   AiOutlineInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import { MdShare, MdClose } from "react-icons/md";
 import { CgFacebook } from "react-icons/cg";
 import "./index.styles.css";
+import { useState } from "react";
 
 export const FloatingButtons = () => {
+  const [fabState, setFabState] = useState(true);
   return (
     <div className="floatingButtonWrapper">
-      <TwitterFloatingButton />
-      <FacebookFloatingButton />
-      <InstagramFloatingButton />
-      <YoutubeFloatingButton />
+      <div
+        className={clsx(
+          fabState ? "fabSectionsWrapper" : "fabSectionsWrapperClosed"
+        )}
+      >
+        <TwitterFloatingButton />
+        <FacebookFloatingButton />
+        <InstagramFloatingButton />
+        {/* <YoutubeFloatingButton /> */}
+      </div>
+
+      <ContactButton
+        fabState={fabState}
+        onClick={() => setFabState((prevState) => !prevState)}
+      />
+    </div>
+  );
+};
+
+const ContactButton = ({ onClick, fabState }) => {
+  return (
+    <div
+      onClick={onClick}
+      className={clsx("contactButton", fabState === false ? "open" : "")}
+    >
+      {fabState ? (
+        <MdShare className="fabIcons" />
+      ) : (
+        <MdClose className="fabIcons" />
+      )}
     </div>
   );
 };
@@ -51,7 +80,7 @@ const InstagramFloatingButton = () => {
     <a
       rel="noreferrer"
       target="_blank"
-      href="https://www.facebook.com/simplyinvest"
+      href="https://www.instagram.com/simplyinvest_mf/"
     >
       <div className={clsx("fab", "instagramButton")}>
         <AiOutlineInstagram className="fabIcons" />

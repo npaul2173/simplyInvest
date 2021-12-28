@@ -60,8 +60,8 @@ export const Home = () => {
             </div>
           ) : (
             <div className="skeletonContainer">
-              {arrayThree.map(() => (
-                <Skeleton />
+              {arrayThree.map((_, index) => (
+                <Skeleton key={index} />
               ))}
             </div>
           )}
