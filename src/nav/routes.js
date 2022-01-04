@@ -1,5 +1,5 @@
 import { AboutUs } from "../screens/aboutUs";
-import { Associates } from "../screens/Associates";
+import { Affiliates } from "../screens/Associates";
 import { Career } from "../screens/career";
 import { ContactScreen } from "../screens/contactPage";
 import { Disclaimer } from "../screens/Disclaimer";
@@ -19,8 +19,8 @@ export const LowerRoutes = [
   },
   {
     path: "/associates",
-    sidebarName: "Associates",
-    component: Associates,
+    sidebarName: "Affiliates",
+    component: Affiliates,
   },
 
   {

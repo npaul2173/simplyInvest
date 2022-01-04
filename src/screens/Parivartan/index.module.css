@@ -2,7 +2,7 @@
   display: flex;
   margin-top: 30px;
   flex-direction: row;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .aboutusContainer {

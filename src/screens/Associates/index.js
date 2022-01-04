@@ -1,159 +1,122 @@
+import clsx from "clsx";
 import React, { useEffect } from "react";
+import { ActionBarSection } from "../../ActionBarSection";
+import { Divider } from "../../common/components/Divider";
+import { ContactForm } from "../../contact";
 import styles from "./index.module.css";
 
-export const Associates = () => {
+export const Affiliates = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    const wd = window.screen.availHeight;
+    const hd = window.screen.availWidth;
+
+    console.log({ wd, hd });
+  }, []);
+
   return (
     <div className={styles.container}>
-      <h2 className={styles.headers}>Disclaimer</h2>
-      <div className={styles.content}>
-        The information/contents on this Website are intended for general
-        information &amp; educational purpose only. Any information / contents
-        are subject to change without notice. While every effort has been made
-        to ensure that the information provided on the website is accurate,
-        timely, secure and error-free, Simply Invest, Promoters, Employees &amp;
-        Agents shall not in any way be responsible for any loss or damages
-        arising in contract, tort or otherwise from the use or inability to use
-        the website and its contents.
+      <div style={{ overflowY: "auto" }}>
+        <h2 className={styles.headers}>Affiliates</h2>
+
+        <div className={styles.subContanet}>
+          <div className={styles.headerContainer}>
+            <p className={styles.subHeaderStyle}>Value You</p>
+          </div>
+          <div className={styles.contentNoColumns}>
+            It is a learning solutions company focused on competency building
+            through On-line / Off-line Trainings on Communication Skills,
+            Personality Development, Investor Awareness, Stock Market, Capital
+            Market, Mutual Funds, Banking, Insurance, Financial Literacy & Soft
+            Skills to Companies, Banks, Management Institutes and various
+            divisions of Indian Armed Forces. Their approach to learning
+            combines conceptual clarity with practical application. All of their
+            training programs are tailor-made based on functional competency &
+            mapping it with the functions & specific job roles of the
+            participants.
+          </div>
+
+          <div className={styles.contentNoColumns}>
+            <b>Farha Zeba</b> is the Founder of Value You. She is an MBA,
+            Certified Soft Skills Trainer, Level 1 - NSE Certified Market
+            Professional (NCMP), Finance & Marketing personnel with 15 years of
+            Banking & AMC experience. A dynamic finance professional having
+            pleasant personality, good communicator with persuasive skills, is
+            now proving her competency in the Training & Education field.
+            <br />
+            <br /> She is also spearheading the movement of educating the masses
+            (especially Women) on Skill development & Financial Literacy for BMA
+            (Bombay Management Association), CMA, Union Bank of India, DRDO,
+            Command Hospital, CRPF, CISF, Indian Army, Barrackpore Army
+            Hospital, Ichapore Rifle Factory, SAIL, National Insurance, CMRI
+            Hospitals, Haldia Petrochemicals, Wipro Infotech, HHI, The Astor,
+            IISWBM, Jadavpur University & Terna Group to name a few. They have
+            trained more than 5000+ people in 175+ sessions till date. They can
+            be reached at <b>valueyou6@gmail.com</b> and further details can be
+            accessed at
+            <b>www.valueyou.in</b>
+          </div>
+        </div>
+
+        <div className={styles.subContanet}>
+          <div className={styles.headerTwoContainer}>
+            <p className={styles.subHeaderStyle}>Sport It Down</p>
+          </div>
+          <div className={styles.contentNoColumns}>
+            It is a Sports Digital content platform to share & promote the
+            inspiring stories of budding & emerging Sports person combining with
+            the amazing sports facts to engage the Sports enthusiasts of the
+            World. They also make creatives, videos, manage Social Media
+            accounts of different Companies & provide consultancy services of
+            various Sporting events. They are the most competitive affiliate
+            programs in the market backed by authenticated & content with a fun
+            element attached to it. They believe in Quality over Quantity. Their
+            You Tube video : https://youtu.be/oMsoIyXP9PI is already viral. They
+            are present on all the Social Media platforms like You Tube
+            (https://www.youtube.com/c/SportItDown), Instagram
+            (https://www.instagram.com/sportitdown/), Linkedin
+            (https://www.linkedin.com/company/sport-it-down) & Facebook
+            (https://www.facebook.com/sportitdown) and covers nearly all the
+            Sports across the world.
+          </div>
+
+          <div className={styles.contentNoColumns}>
+            It is the brain-child of <b>Mr. Vedant Garg</b>, a Sports Management
+            Professional & started on April, 2020 and as on date they have
+            covered more than 120 Athletes across the Globe & have growing fan
+            following of 5000+ in just over a year’s time. They can be reached
+            at vedantgarg777@gmail.com
+            <b>www.valueyou.in</b>
+          </div>
+        </div>
+
+        <div className={styles.subContanet}>
+          <div className={styles.headerThreeContainer}>
+            <p className={styles.subHeaderStyle}>Gruham</p>
+          </div>
+          <div className={styles.contentNoColumns}>
+            <b>Gruham</b> (Home-made) is an ultimate online destination, where
+            you can get all: ; the freshly grinded, genuine Herbs & Spices,
+            premium quality of dry fruits, nuts and exotic range of Snacks &
+            Cookies at reasonable prices. It is an entrepreneurial initiative of
+            stay-at-home mother <b>Shweta</b>, MBA, to re-instill the roots of
+            pure & un-adulterated ingredients in this urbanized society. She
+            tied with self-help group of women in her Rajasthan villages &
+            empowered them by opening doors to a big market. Determined to make
+            a mark, they already have a dedicated customer base of 500+ in just
+            6 months of her launch. They can either be contacted at{" "}
+            <b>99114 21271</b> or at https://www.facebook.com/gruhamhomemade
+          </div>
+        </div>
       </div>
-      <div className={styles.content}>
-        Simply Invest has attempted to provide accurate and up-to-date
-        information. No rights accrue to the Users from the information
-        published on this Website. You undertake not to use this Website or any
-        interactive / online services contained therein for any purpose, which
-        is unlawful, abusive, obscene, threatening or prohibited by these Terms
-        (including notices).
-      </div>
-      <div className={styles.content}>
-        Advice provided on the website should not be relied upon for personal
-        and financial decisions and the user should consult us for specific
-        advice tailored to his or her situation. The User shall not hold Simply
-        Invest responsible for sharing and/or disclosing the said information
-        and also for any consequences suffered by the User and/or others by
-        reason thereof.
-      </div>
-      <div className={styles.content}>
-        Links to downloadable software sites are for convenience only and we are
-        not liable or responsible in manner whatsoever, for any difficulties
-        and/or consequences associated with downloading any software. Use of any
-        downloaded software is governed by the terms of the license agreement,
-        if any, which accompanies or is provided or shall be provided with the
-        software. Any material downloaded or otherwise obtained through the use
-        of the website is at the User&#39;s own discretion and risk and the User
-        will be solely responsible for any damage that may occur to the
-        User&#39;s computer systems and data as a result of download of such
-        material.
-      </div>
-      <div className={styles.content}>
-        We provide the Website and its information/contents on an &quot;as
-        is&quot; basis and do not make any express or implied warranties,
-        representations, guarantees, endorsements or conditions with respect to
-        the Website or its information/contents, Software, Features,
-        Products/Services including without limitation, warranties as to
-        merchantability, operation/functioning, non-infringement, usefulness,
-        completeness, accuracy, correctness, reliability and fitness for a
-        particular purpose. Further, we make no representations or warranties or
-        guarantees regarding the accuracy, functionality or performance of any
-        Software (including, but not limited to any third party software) that
-        may be used in this Website.
-      </div>
-      <div className={styles.content}>
-        This Website has been registered under Indian jurisdiction. If you use
-        this Website from any jurisdiction other than India, you are responsible
-        for compliance with applicable local laws and Simply Invest, any of its
-        affiliates, associates, their directors, employees and agents shall not
-        be liable or responsible, in any matter whatsoever, pertaining to the
-        same.
-      </div>
-      <div className={styles.content}>
-        This Website may provide you with access to other websites (&quot;Local
-        Site&quot;). Each Local Site will be governed by local terms in addition
-        to these Terms. Please read the Local Site terms carefully before using
-        the Local Site. This Website may refer to information/contents provided
-        by third parties via hyperlinks or other means. Simply Invest has not
-        verified, in any manner whatsoever, whether such information/contents
-        are reasonable, accurate, reliable, complete or up-to-date. Links to
-        other websites do not constitute Simply Invest’s approval/disapproval or
-        endorsement of such websites or its information/contents or its
-        products/services or its documents or advertisements. Simply Invest is
-        not liable or responsible, in any manner whatsoever, for any such
-        information/contents provided by third parties. Links to Simply Invest
-        Website are not permitted without the prior written consent of Simply
-        Invest.
-      </div>
-      <div className={styles.content}>
-        This Website may contain one or more of the services such as bulletin
-        boards, chat areas, news groups, forums, and/or other message or
-        communication facilities. You agree to use such services only to send
-        and receive information and material that are proper and related to the
-        particular service, area, group, forum, or other information or
-        communication facility. In addition to any other terms or conditions of
-        use of any bulletin board services, chat areas, news groups, forums,
-        and/or other message or communication facilities, you agree that when
-        using one, you will not: (a) Upload files that contain software or other
-        material protected by intellectual property laws or by rights of privacy
-        or publicity unless you own or control such rights or have received all
-        necessary consents. (b) Upload files that contain viruses, corrupted
-        files, or any other similar software or programs that may damage the
-        operation of another&#39;s computer. (c) Defame, abuse, harass, stalk,
-        threaten or otherwise violate the legal rights (such as rights of
-        privacy and publicity) of others. We have no obligation to monitor the
-        bulletin board services, chat areas, news groups, forums, and/or other
-        message or communication facilities.
-      </div>
-      <div className={styles.content}>
-        Simply Invest retains all rights (including copyrights, trademarks,
-        patents as well as any other intellectual property rights in terms of
-        compliance with relevant laws, rules, regulations etc. as may be
-        applicable from time to time) in relation to all information/contents on
-        this Website (including all texts, graphics and logos). You may not
-        copy, publish, distribute or reproduce any of the information contained
-        on this Website in any form without the prior written consent of Simply
-        Invest.
-      </div>
-      <div className={styles.content}>
-        None of the images are our creations. We have used them from different
-        publicly available sites. The copyright of all the images are with their
-        respective owners &amp; if they object to our using them, we shall
-        remove them immediately.
-      </div>
-      <div className={styles.content}>
-        The Terms mentioned herein are severable. In case any part of these
-        Terms is rendered invalid or unenforceable, then the remainder of the
-        Terms shall continue to be valid and enforceable to the fullest extent
-        permitted by law. No delay or failure by us to exercise any of our
-        powers, rights or remedies under the Terms of this Website shall operate
-        as a waiver of them, nor shall any single or partial exercise of any
-        such powers, rights or remedies preclude any other or further exercise
-        of them. The remedies provided in the Terms of this Website are
-        cumulative and not exclusive of any remedies provided by law.
-      </div>
-      <div className={styles.content}>
-        We reserve the right in our sole discretion to deny any Users access to
-        this Website, any interactive service herein, or any portion of this
-        Website, without notice and without being liable or responsible, in any
-        matter whatsoever, for the same.
-      </div>
-      <div className={styles.content}>
-        If you are dissatisfied with any portion of this Website, or with any of
-        these Terms, your sole and exclusive remedy is to discontinue using this
-        Website.
-      </div>
-      <div className={styles.content}>
-        You agree to indemnify and hold Simply Invest, its affiliates,
-        associates, their promoters, employees and agents harmless, of any
-        liability, losses and expenses (including litigation expenses), claims,
-        actions, suits arising out of and/or related to your violation of these
-        Disclaimers (including the Terms) and any other terms mentioned in the
-        Terms of Use, wherever applicable.
-      </div>
-      <div className={styles.content}>
-        These Terms are governed by the laws of India and the competent Courts
-        of Kolkata will have exclusive jurisdiction in respect of any dispute,
-        which may arise out of or relating to the use of this Website.
+
+      <div className={styles.contactsContainer}>
+        <ContactForm />
+        <Divider spacing={40} width={"50%"} />
+        <ActionBarSection />
       </div>
     </div>
   );

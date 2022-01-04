@@ -8,7 +8,6 @@
 .contentWrapper {
   display: flex;
   flex: 1;
-  overflow-y: scroll;
   margin-left: 300px;
 }
 
@@ -25,6 +24,7 @@
   .contentWrapper {
     flex-direction: column;
   }
+
   .contactWrapper {
     padding-left: 30px;
     display: flex;

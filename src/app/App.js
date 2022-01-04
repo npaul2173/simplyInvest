@@ -20,7 +20,7 @@ const App = () => {
         <div className="mainWrapper">
           <ToastMessage />
           <NavBar />
-          <div className="contentWrapper" style={{ overflow: "clip" }}>
+          <div className="contentWrapper">
             <div className="box1">
               <Switch>
                 {Routes.map((route) => (
