@@ -3,12 +3,8 @@ import React, { useEffect } from "react";
 import { NavBar } from "../nav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { LowerRoutes, Routes } from "../nav/routes";
-import { ContactForm } from "../contact";
 import { LowerNav } from "../lowerNav";
-import { FloatingButtons } from "../floatingButtons";
-import { ActionBarSection } from "../ActionBarSection";
 import { ToastMessage } from "../common/components/Toast";
-
 import { AppContainer } from "../common/utils/Container";
 
 const App = () => {

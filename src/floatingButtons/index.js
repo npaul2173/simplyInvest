@@ -89,16 +89,16 @@ const InstagramFloatingButton = () => {
   );
 };
 
-const YoutubeFloatingButton = () => {
-  return (
-    <a
-      rel="noreferrer"
-      target="_blank"
-      href="https://www.facebook.com/simplyinvest"
-    >
-      <div className={clsx("fab", "youtubeButton")}>
-        <AiOutlineYoutube className="fabIcons" />
-      </div>{" "}
-    </a>
-  );
-};
+// const YoutubeFloatingButton = () => {
+//   return (
+//     <a
+//       rel="noreferrer"
+//       target="_blank"
+//       href="https://www.facebook.com/simplyinvest"
+//     >
+//       <div className={clsx("fab", "youtubeButton")}>
+//         <AiOutlineYoutube className="fabIcons" />
+//       </div>{" "}
+//     </a>
+//   );
+// };
