@@ -1,7 +1,9 @@
 import React, { useContext, useEffect } from "react";
+import { ActionBarSection } from "../../ActionBarSection";
 
 import { InfoBox } from "../../common/components/InfoBox";
 import { AppContext } from "../../common/utils/Container";
+import { ContactForm } from "../../contact";
 import "./index.styles.css";
 
 const arrayThree = new Array(3).fill({});
@@ -125,6 +127,11 @@ export const Home = () => {
             </div>
           )}
         </div>
+      </div>
+
+      <div className={StyleSheet.sideSection}>
+        <ContactForm />
+        <ActionBarSection />
       </div>
     </div>
   );

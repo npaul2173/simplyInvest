@@ -1,4 +1,4 @@
-export const BASE_URL = "https://simplyinvestmf.in/";
+export const BASE_URL = "https://admin.simplyinvestmf.in/";
 
 export const APP_URLS = {
   ANNOUNCEMENTS: BASE_URL + "all-announcements",

@@ -1,26 +1,14 @@
 import { AboutUs } from "../screens/aboutUs";
+import { Associates } from "../screens/Associates";
 import { ContactScreen } from "../screens/contactPage";
 import { Disclaimer } from "../screens/Disclaimer";
 import { Home } from "../screens/home";
 import { InvestOnline } from "../screens/InvestOnline";
+import { JoinUs } from "../screens/JoinUs";
 import { LearningCenter } from "../screens/LearningCentre";
+import { OurServices } from "../screens/OurServices";
 import { Parivartan } from "../screens/Parivartan";
-
-const OurServices = () => {
-  return <h1>Our Services</h1>;
-};
-
-const Sip = () => {
-  return <h1>Sip</h1>;
-};
-
-const Associates = () => {
-  return <h1>Associates</h1>;
-};
-
-const JoinUs = () => {
-  return <h1>Join Us</h1>;
-};
+import { Sip } from "../screens/Sip";
 
 export const LowerRoutes = [
   {

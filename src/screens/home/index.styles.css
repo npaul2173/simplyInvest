@@ -1,13 +1,15 @@
 .homeContainer {
   padding: 0px 20px 0px 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  /* flex-direction: column; */
   margin-top: 30px;
   margin-bottom: 100px;
 }
 
 .homeFirstContainer {
   display: flex;
+  flex: 1;
 }
 
 .headers {
@@ -49,7 +51,7 @@
   height: 80px;
   display: block;
   border-radius: 10px;
-  background: linear-gradient( to right, rgb(230, 230, 230), rgb(230, 230, 230)50%, rgb(240, 240, 240) 80%), rgb(230, 230, 230);
+  background: linear-gradient(to right, rgb(230, 230, 230), rgb(230, 230, 230)50%, rgb(240, 240, 240) 80%), rgb(230, 230, 230);
   background-repeat: repeat-y;
   background-size: 100px 500px;
   background-position: 0 0;
@@ -119,11 +121,35 @@
   color: #666666;
 }
 
-@media screen and (max-width: 1000px) {
+.sideSection {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  .homeContainer {
+    flex-direction: column;
+  }
+
+  /* .leftContainer {
+    margin-top: 50px;
+  } */
+}
+
+
+
+@media screen and (max-width: 1200px) {
   .homeFirstContainer {
     /* background-color: rgb(207, 90, 22); */
     flex-direction: column;
   }
+
+  .homeContainer {
+    flex-direction: column;
+  }
+
   .leftContainer {
     margin-top: 50px;
   }

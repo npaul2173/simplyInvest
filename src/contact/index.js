@@ -14,11 +14,11 @@ export const ContactForm = () => {
       "Content-Type": "application/x-www-form-urlencoded",
     };
 
-    const launch_toast = () => {
+    const launch_toast = (message = "") => {
       var x = document.getElementById("toast");
       var divText = document.getElementById("desc");
       console.log(divText.innerHTML);
-      divText.innerHTML = "Message has been sent";
+      divText.innerHTML = message;
       x.className = "show";
       setTimeout(function () {
         x.className = x.className.replace("show", "");
@@ -26,22 +26,33 @@ export const ContactForm = () => {
     };
 
     console.log({ name, mobileNumber, emailID, description });
-    fetch(APP_URLS.SAVE_CONTACT, {
-      method: "POST",
-      body: `Name=${name}&Mobile=${mobileNumber}&Email=${emailID}&Description=${description}`,
-      headers: headersList,
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-        setName("");
-        setDescription("");
-        setEmailID("");
-        setMobileNumber("");
-        launch_toast();
-      });
+    if (
+      name === "" ||
+      mobileNumber === "" ||
+      emailID === "" ||
+      description === ""
+    ) {
+      launch_toast("Please fill up the form");
+    } else {
+      try {
+        fetch(APP_URLS.SAVE_CONTACT, {
+          method: "POST",
+          body: `Name=${name}&Mobile=${mobileNumber}&Email=${emailID}&Description=${description}`,
+          headers: headersList,
+        })
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data);
+            setName("");
+            setDescription("");
+            setEmailID("");
+            setMobileNumber("");
+            launch_toast("Message has been sent");
+          });
+      } catch (error) {}
+    }
   };
 
   return (

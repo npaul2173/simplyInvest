@@ -34,10 +34,12 @@ export const NavBar = () => {
   };
 
   useEffect(() => {
-    fetch(APP_URLS.VISITOR_COUNT).then(async (response) => {
-      const responseJson = await response.json();
-      setVisitorCount(responseJson);
-    });
+    try {
+      fetch(APP_URLS.VISITOR_COUNT).then(async (response) => {
+        const responseJson = await response.json();
+        setVisitorCount(responseJson);
+      });
+    } catch (error) {}
   }, []);
   return (
     <>

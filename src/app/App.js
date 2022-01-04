@@ -24,7 +24,7 @@ const App = () => {
         <div className="mainWrapper">
           <ToastMessage />
           <NavBar />
-          <div className="contentWrapper">
+          <div className="contentWrapper" style={{ overflow: "clip" }}>
             <div className="box1">
               <Switch>
                 {Routes.map((route) => (
@@ -40,18 +40,18 @@ const App = () => {
               </Switch>
             </div>
 
-            <div className="contactWrapper">
+            {/* <div className="contactWrapper">
               <div className="contactAppWrapper">
                 <ContactForm />
               </div>
               <div className="actionAppWrapper">
                 <ActionBarSection />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <LowerNav />
-        <FloatingButtons />
+        {/* <FloatingButtons /> */}
       </BrowserRouter>
     </AppContainer>
   );

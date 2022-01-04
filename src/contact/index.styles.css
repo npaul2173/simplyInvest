@@ -8,7 +8,10 @@
   font-weight: 800;
   font-size: 20px;
   letter-spacing: -0.05em;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  color: #3B5C90;
+
+
 }
 
 input[type="text"], input[ type="number"], select, textarea {
@@ -57,13 +60,12 @@ input[type=number] {
 
 .container {
   border-radius: 5px;
-  padding: 20px;
-  max-width: 300px;
+  padding-top: 0px;
+  max-width: 400px;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1200px) {
   .container {
-    /* background-color: rgb(164, 207, 22); */
     max-width: 2000px;
   }
 }

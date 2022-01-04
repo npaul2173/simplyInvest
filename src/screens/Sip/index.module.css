@@ -1,0 +1,24 @@
+.container {
+  padding: 0px 40px 100px 40px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.headers {
+  font-weight: 800;
+  /* font-size: 24rem;
+  line-height: 26rem; */
+  letter-spacing: -0.065em;
+  color: #3B5C90;
+}
+
+.content {
+  margin-top: 1rem;
+  /* column-count: 2; */
+  column-gap: 2rem;
+}
+
+/* .ourvaluesContainer {
+  margin-top: 2rem;
+}   */
