@@ -15,7 +15,7 @@
  }
 
  .loweNavcontainer {
-   margin-left: 50px;
+   /* margin-left: 50px; */
  }
 
  .lowernav a {
@@ -65,6 +65,22 @@
    .lowernav {
      padding: 20px;
      max-height: 300px;
+   }
+
+   .infoConatiner h4 {
+     font-family: 'Roboto Condensed' !important;
+     font-weight: 700;
+     color: #ffffff;
+     font-size: 17px;
+     margin-left: 40px;
+   }
+
+
+   .infoConatiner {
+     /* background-color: aqua; */
+     display: flex;
+     flex-direction: row;
+     margin-right: 300px
    }
 
    .lowernav a {

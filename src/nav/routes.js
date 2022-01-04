@@ -1,5 +1,6 @@
 import { AboutUs } from "../screens/aboutUs";
 import { Associates } from "../screens/Associates";
+import { Career } from "../screens/career";
 import { ContactScreen } from "../screens/contactPage";
 import { Disclaimer } from "../screens/Disclaimer";
 import { Home } from "../screens/home";
@@ -20,6 +21,12 @@ export const LowerRoutes = [
     path: "/associates",
     sidebarName: "Associates",
     component: Associates,
+  },
+
+  {
+    path: "/careeer_with_us",
+    sidebarName: "Career with us",
+    component: Career,
   },
   {
     path: "/disclaimer",
