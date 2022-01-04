@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import React, { useEffect } from "react";
 import { ActionBarSection } from "../../ActionBarSection";
 import { Divider } from "../../common/components/Divider";
