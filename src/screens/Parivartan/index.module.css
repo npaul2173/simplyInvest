@@ -1,32 +1,104 @@
-.container {
-  display: flex;
-  margin-top: 30px;
-  flex-direction: row;
-  /* overflow: hidden; */
-}
-
-.aboutusContainer {
-  /* background-color: antiquewhite; */
-  padding: 0px 20px 0px 40px;
-  display: flex;
-  margin-top: 30px;
-  flex-direction: column;
+.mapView {
+  border-style: none;
+  padding: 10px;
+  border-radius: 20px;
+  /* max-width: 700px; */
+  background-color: white;
 }
 
 .headers {
+  margin-bottom: 1rem;
   font-weight: 800;
-  font-size: 24px;
-  line-height: 26px;
-  letter-spacing: -0.065px;
+  letter-spacing: -0.065em;
   color: #3B5C90;
 }
 
-.aboutusContent {
+
+.subHeaderStyles {
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  color: #2d2f31;
+}
+
+.listStyles li {
+  padding-top: 10px;
+}
+
+
+
+.contentContainer {
+  margin-bottom: 1rem;
   margin-top: 1rem;
   column-count: 2;
   column-gap: 2rem;
+
+
 }
 
-.ourvaluesContainer {
+.firstSection {
+  flex-direction: row;
+  display: flex;
+
+
+
+}
+
+.sectionContainer {
+  width: 100%;
+  padding-right: 2rem;
+
+}
+
+
+.container {
+  padding: 0px 20px 200px 40px;
+  margin-top: 30px;
+}
+
+.contactDetails {
   margin-top: 2rem;
+}
+
+.sectionWrapper {
+  margin-top: 2rem;
+}
+
+.contactsContainer {
+  max-width: 300px;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .contentContainer {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    column-count: 1;
+
+  }
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .firstSection {
+    flex-direction: column;
+
+  }
+
+  .sectionContainer {
+
+    width: 100%;
+    padding-right: 0px;
+  }
+
+  .contactsContainer {
+    padding-top: 2rem;
+    max-width: 1000px;
+  }
+
+
+
 }
