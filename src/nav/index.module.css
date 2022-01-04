@@ -16,7 +16,7 @@
   color: black;
   text-align: center;
   user-select: none;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.04em;
   padding-left: 10px;
 }
 
@@ -177,32 +177,39 @@
   .visitsCount {
     width: 100%;
   }
+
   .appHeader {
     align-items: center;
     display: flex;
   }
+
   .header_bar {
     visibility: hidden;
   }
+
   .sidenav {
     display: none;
     width: 0px;
     transition: 200ms,
   }
+
   .expanded {
     display: block;
     width: 100%;
     transition: 0.5s ease;
   }
+
   .collapsed {
     display: none;
     transition: 0.5s ease;
     width: 0px;
   }
+
   .logo_img {
     width: 40px;
     /* background-color: #3B5C90; */
   }
+
   .appHeadingTitle {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
@@ -210,9 +217,10 @@
     color: black;
     text-align: center;
     user-select: none;
-    letter-spacing: -0.065em;
+    letter-spacing: -0.04em;
     padding-left: 10px;
   }
+
   .appHeaderContent {
     /* background-color: #7496CC; */
     width: 100%;

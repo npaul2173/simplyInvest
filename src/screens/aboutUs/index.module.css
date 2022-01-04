@@ -21,6 +21,11 @@
   color: #2d2f31;
 }
 
+.secondContainer {
+  flex-direction: row;
+  display: flex;
+}
+
 .listStyles li {
   padding-top: 10px;
 }
@@ -60,6 +65,14 @@
   margin-top: 2rem;
 }
 
+.secondSubContainer {
+  width: 50%;
+}
+
+.firstSubcont {
+  margin-right: 2rem;
+}
+
 .sectionWrapper {
   margin-top: 2rem;
 }
@@ -76,6 +89,18 @@
     column-count: 1;
 
   }
+
+  .secondContainer {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .secondSubContainer {
+    width: 100%;
+
+  }
+
+
 
 }
 

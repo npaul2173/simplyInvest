@@ -14,48 +14,42 @@ export const Sip = () => {
       <div>
         <h2 className={styles.headers}>SIP</h2>
         <div className={styles.content}>
-          At Simply Invest, we build people who create value, who believe that
-          the future belongs to those who are able to create it. Which is why we
-          value integrity, creativity, passion, a 'will do' attitude and above
-          all else, the will and determination to succeed.
+          <p>
+            A Systematic Investment Plan (or better known as SIP) is based on
+            the simple strategy of investing a fixed amount on a fixed date of
+            every month, for a long time to achieve long-term financial goals
+            (like your child’s education, their marriage, buying house or
+            retirement) Your money is automatically debited from your bank
+            account every month.
+          </p>
           <br />
-          <br /> We leverage human capital for competitiveness by nurturing
-          knowledge, entrepreneurship and creativity. We believe it is these
-          strengths that will help us successfully compete in a globalised
-          environment and complex financial world. We stimulate the drive to be
-          the best and take immense pride in being Indian.
           <br />
-          <br /> We keep our people intellectually stimulated and give them the
-          freedom to take their own decisions and the responsibility to make
-          Simply Invest grow through innovation and experimentation.
+          <p>
+            When you invest using a SIP, you don’t need to worry about timing
+            your investment at all. There is a popular saying – drop by drop
+            fills the bucket. A SIP also works on the same principal, just like
+            a RD with a Bank.
+          </p>
           <br />
-          <br /> Our focus is on relentless value addition to enhance
-          competencies. We believe professional growth invests the
-          responsibility of both the individual and the organisation.
-          <div className={styles.breakPoint}>
-            <br />
-            <br />
-          </div>
-          {"    "}
-          Simply Invest is an equal opportunities employer. We do not
-          discriminate on grounds of Age, Gender, Caste, Creed, Ethnicity,
-          Economic or Disability. We recognize that having a work force that
-          broadly reflects the composition of the local society in which we
-          operate. We thus use diversity as a competitive differentiator, both
-          in employment and in customer markets. We stimulate the drive to be
-          the best and take immense pride in being Indian.
+          <br />{" "}
+          <p>
+            <b>Advantages</b>: Convenience, Rupee Cost Averaging, Power of
+            Compounding, 2x returns than RD, brings financial discipline,
+            pocket-friendly, No Timing the market, Easy to invest
+          </p>
           <br />
-          <br /> With a vision to be a role model in HR practices, we believe in
-          helping our employees grow knowledge, which will exploit their true
-          potential in order to succeed in life. If you think that you have the
-          passion, zeal to perform & in need of work then do forward your
-          updated resume (in .doc format), recent pass-port size colour scanned
-          photograph & expected salary at simplyinvest@yahoo.in by mentioning
-          “Career – Your name” in the subject line.
           <br />
-          <br /> We will surely get in touch with you at the earliest with the
-          right opportunity for you.
+          <p>
+            <b>Most Important</b> - Don't put any random time period in SIP. Tag
+            each SIP with your Life's Goal. All you need to do is use your due
+            diligence while selecting the fund as per your investment horizon,
+            and maintain regularity in paying the required amount every month.
+            Yes, the process of investing in SIP is as simple as that.
+          </p>
+          <br />
+          <br />
         </div>
+        <p>For more understanding, click on the link below :</p>
       </div>
 
       <div className={styles.contactsContainer}>

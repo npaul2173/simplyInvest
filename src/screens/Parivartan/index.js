@@ -36,20 +36,29 @@ export const Parivartan = () => {
             <div style={{ paddingLeft: 10 }}>
               <ul className={styles.listStyles}>
                 <li>
-                  Email us the list of all your loss-making Shares / MF in an
-                  Excel file.
+                  <p>
+                    Email us the list of all your loss-making Shares / MF in an
+                    Excel file.
+                  </p>
                 </li>
                 <li>
-                  Sell them through your own broker, after our evaluation.{" "}
+                  <p>
+                    Sell them through your own broker, after our evaluation.{" "}
+                  </p>
                 </li>
                 <li>
-                  We will then construct a new Mutual Fund Portfolio (MFP) from
-                  the exact sale proceeds of your sold Shares / MF (No extra
-                  money is needed) at a flat fee of 2% of the portfolio value.
+                  <p>
+                    We will then construct a new Mutual Fund Portfolio (MFP)
+                    from the exact sale proceeds of your sold Shares / MF (No
+                    extra money is needed) at a flat fee of 2% of the portfolio
+                    value.
+                  </p>
                 </li>
                 <li>
-                  After 1 year, we will evaluate the value of the MFP with your
-                  sold Shares / MF.
+                  <p>
+                    After 1 year, we will evaluate the value of the MFP with
+                    your sold Shares / MF.
+                  </p>
                 </li>
               </ul>
             </div>
