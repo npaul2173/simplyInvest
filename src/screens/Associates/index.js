@@ -74,12 +74,23 @@ export const Affiliates = () => {
             programs in the market backed by authenticated & content with a fun
             element attached to it. They believe in Quality over Quantity. Their
             You Tube video : https://youtu.be/oMsoIyXP9PI is already viral. They
-            are present on all the Social Media platforms like You Tube
-            (https://www.youtube.com/c/SportItDown), Instagram
-            (https://www.instagram.com/sportitdown/), Linkedin
-            (https://www.linkedin.com/company/sport-it-down) & Facebook
-            (https://www.facebook.com/sportitdown) and covers nearly all the
-            Sports across the world.
+            are present on all the Social Media platforms like {"  "}
+            <a href="https://www.youtube.com/c/SportItDown">
+              <b>YouTube</b>
+            </a>
+            ,{" "}
+            <a href="https://www.instagram.com/sportitdown/">
+              <b>Instagram</b>
+            </a>
+            ,{" "}
+            <a href="https://www.facebook.com/sportitdown">
+              <b>Facebook</b>
+            </a>
+            ,{" "}
+            <a href="https://www.linkedin.com/company/sport-it-down">
+              <b>Linkedin</b>
+            </a>{" "}
+            and covers nearly all the Sports across the world.
           </div>
 
           <div className={styles.contentNoColumns}>
